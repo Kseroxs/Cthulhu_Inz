@@ -325,6 +325,7 @@ namespace Cthulhu_Inz
             }
             Pula_pkt.Visible = true;
             Pula_pkt.Text = "Pula punktów do wykorzystania na poniższe umiejętności: "+ pula_pkt.ToString();
+            Unik.Text = (k6[1] / 2).ToString();
 
 
         }

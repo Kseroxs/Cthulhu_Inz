@@ -2,8 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <html>
         <body>
-            
+            <h2 class="text-center">
                 <asp:Label ID="Label1" runat="server" Text="Udało się dodać postać!" Visible="False" ForeColor="#33CC33"></asp:Label>
+                </h2>
             <h1 class="text-center">
                 Tworzenie Badacza
             </h1>
@@ -30,8 +31,8 @@
     Type="Integer" MinimumValue="15" MaximumValue="90" ForeColor="Red" Font-Size="Small"></asp:RangeValidator>
                 </div>
             <div class="text-center">
-            Miejsce zamieszkania <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-            Miejsce urdodzenia <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            Miejsce zamieszkania <asp:TextBox ID="Miejsce_zamieszkania" runat="server"></asp:TextBox>
+            Miejsce urdodzenia <asp:TextBox ID="Miejsce_urodzenia" runat="server"></asp:TextBox>
                 </div>
             <h2 class="text-center">CECHY</h2>
             <h2 class="text-center">
@@ -68,74 +69,74 @@
             <asp:Label ID="Umiejetnosci_dodawanie" runat="server" Text="Label" Visible="False" ></asp:Label>
                 </div>
             <div class="text-center">
-                Antropologia <asp:TextBox ID="TextBox19" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Księgowość <asp:TextBox ID="TextBox20" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Pływanie <asp:TextBox ID="TextBox21" runat="server" Height="18px" Width="27px">20</asp:TextBox>
-                Unik <asp:TextBox ID="TextBox22" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                Antropologia <asp:TextBox ID="Antropologia" runat="server" Height="18px" Width="27px">1</asp:TextBox>
+                Księgowość <asp:TextBox ID="Ksiegowosc" runat="server" Height="18px" Width="27px">5</asp:TextBox>
+                Pływanie <asp:TextBox ID="Plywanie" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+                Unik <asp:TextBox ID="Unik" runat="server" Height="18px" Width="27px" ReadOnly="true"></asp:TextBox>
             </div>
             <div class="text-center">
-                Archeologia <asp:TextBox ID="TextBox23" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Majętność <asp:TextBox ID="TextBox24" runat="server" Height="18px" Width="27px"></asp:TextBox>
-                Prawo <asp:TextBox ID="TextBox25" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Urok Osobisty <asp:TextBox ID="TextBox26" runat="server" Height="18px" Width="27px">15</asp:TextBox>
+                Archeologia <asp:TextBox ID="Archeologia" runat="server" Height="18px" Width="27px">1</asp:TextBox>
+                Majętność <asp:TextBox ID="Majetnosc" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                Prawo <asp:TextBox ID="Prawo" runat="server" Height="18px" Width="27px">5</asp:TextBox>
+                Urok Osobisty <asp:TextBox ID="Urok_osobisty" runat="server" Height="18px" Width="27px">15</asp:TextBox>
             </div>
             <div class="text-center">
-                Broń Palna(Karabin/Strzelba) <asp:TextBox ID="TextBox27" runat="server" Height="18px" Width="27px">25</asp:TextBox>
-                Mechanika <asp:TextBox ID="TextBox28" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Prowadzenie Samochodu <asp:TextBox ID="TextBox29" runat="server" Height="18px" Width="27px">20</asp:TextBox>
-                Walka Wręcz(Bijatyka) <asp:TextBox ID="TextBox30" runat="server" Height="18px" Width="27px">25</asp:TextBox>
+                Broń Palna(Karabin/Strzelba) <asp:TextBox ID="Bron_palna_dluga" runat="server" Height="18px" Width="27px">25</asp:TextBox>
+                Mechanika <asp:TextBox ID="Mechanika" runat="server" Height="18px" Width="27px">10</asp:TextBox>
+                Prowadzenie Samochodu <asp:TextBox ID="Prowadzenie_Samochodu" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+                Walka Wręcz(Bijatyka) <asp:TextBox ID="Walka_wrecz" runat="server" Height="18px" Width="27px">25</asp:TextBox>
             </div>
             <div class="text-center">
-                Medycyna <asp:TextBox ID="TextBox31" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Psychoanaliza <asp:TextBox ID="TextBox32" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Broń Palna(Krótka) <asp:TextBox ID="TextBox33" runat="server" Height="18px" Width="27px">20</asp:TextBox>
-                Mity Cthulhu <asp:TextBox ID="TextBox34" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                Medycyna <asp:TextBox ID="Medycyna" runat="server" Height="18px" Width="27px">1</asp:TextBox>
+                Psychoanaliza <asp:TextBox ID="Psychoanaliza" runat="server" Height="18px" Width="27px">1</asp:TextBox>
+                Broń Palna(Krótka) <asp:TextBox ID="Bron_palna_krotka" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+                Mity Cthulhu <asp:TextBox ID="Mity_cthulhu" runat="server" Height="18px" Width="27px" ReadOnly="true">0</asp:TextBox>
             </div>
             <div class="text-center">
-                Psychologia <asp:TextBox ID="TextBox35" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Charakteryzacja <asp:TextBox ID="TextBox36" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Nasłuchiwanie <asp:TextBox ID="TextBox37" runat="server" Height="18px" Width="27px">20</asp:TextBox>
-                Rzucanie <asp:TextBox ID="TextBox38" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+                Psychologia <asp:TextBox ID="Psychologia" runat="server" Height="18px" Width="27px">10</asp:TextBox>
+                Charakteryzacja <asp:TextBox ID="Charakteryzacja" runat="server" Height="18px" Width="27px">5</asp:TextBox>
+                Nasłuchiwanie <asp:TextBox ID="Nasłuchiwanie" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+                Rzucanie <asp:TextBox ID="Rzucanie" runat="server" Height="18px" Width="27px">20</asp:TextBox>
             </div>
             <div class="text-center">
-                Wiedza o Naturze <asp:TextBox ID="TextBox39" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Elektryka <asp:TextBox ID="TextBox40" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Nauka <asp:TextBox ID="TextBox41" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Skakanie <asp:TextBox ID="TextBox42" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+                Wiedza o Naturze <asp:TextBox ID="Wiedza_o_naturze" runat="server" Height="18px" Width="27px">10</asp:TextBox>
+                Elektryka <asp:TextBox ID="Elekrtyka" runat="server" Height="18px" Width="27px">10</asp:TextBox>
+                Nauka <asp:TextBox ID="Nauka" runat="server" Height="18px" Width="27px">1</asp:TextBox>
+                Skakanie <asp:TextBox ID="Skakanie" runat="server" Height="18px" Width="27px">20</asp:TextBox>
             </div>
             <div class="text-center">
-                Wspinaczka <asp:TextBox ID="TextBox43" runat="server" Height="18px" Width="27px">20</asp:TextBox>
-                Gadanina <asp:TextBox ID="TextBox44" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Spostrzegawczoś<asp:TextBox ID="TextBox45" runat="server" Height="18px" Width="27px">25</asp:TextBox>ć 
-                Wycena <asp:TextBox ID="TextBox46" runat="server" Height="18px" Width="27px">5</asp:TextBox>
+                Wspinaczka <asp:TextBox ID="Wspinaczka" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+                Gadanina <asp:TextBox ID="Gadanina" runat="server" Height="18px" Width="27px">5</asp:TextBox>
+                Spostrzegawczoś<asp:TextBox ID="Spostrzegawczosc" runat="server" Height="18px" Width="27px">25</asp:TextBox>ć 
+                Wycena <asp:TextBox ID="Wycena" runat="server" Height="18px" Width="27px">5</asp:TextBox>
             </div>
             <div class="text-center">
-                Historia <asp:TextBox ID="TextBox47" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Sztuka/Rzemiosło <asp:TextBox ID="TextBox48" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Zastraszanie <asp:TextBox ID="TextBox49" runat="server" Height="18px" Width="27px">15</asp:TextBox>
-                Jeździectwo <asp:TextBox ID="TextBox50" runat="server" Height="18px" Width="27px">5</asp:TextBox>
+                Historia <asp:TextBox ID="Historia" runat="server" Height="18px" Width="27px">5</asp:TextBox>
+                Sztuka/Rzemiosło <asp:TextBox ID="Sztuka_rzemioslo" runat="server" Height="18px" Width="27px">5</asp:TextBox>
+                Zastraszanie <asp:TextBox ID="Zastraszanie" runat="server" Height="18px" Width="27px">15</asp:TextBox>
+                Jeździectwo <asp:TextBox ID="Jezdziectwo" runat="server" Height="18px" Width="27px">5</asp:TextBox>
             </div>
             <div class="text-center">
-                Nawigacja <asp:TextBox ID="TextBox51" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Zręczne Palce <asp:TextBox ID="TextBox52" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Język Obcy <asp:TextBox ID="TextBox53" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Obsługa Ciężkiego Sprzętu <asp:TextBox ID="TextBox54" runat="server" Height="18px" Width="27px">1</asp:TextBox>
+                Nawigacja <asp:TextBox ID="Nawigacja" runat="server" Height="18px" Width="27px">10</asp:TextBox>
+                Zręczne Palce <asp:TextBox ID="Zreczne_palce" runat="server" Height="18px" Width="27px">10</asp:TextBox>
+                Język Obcy <asp:TextBox ID="Jezyk_obcy" runat="server" Height="18px" Width="27px">1</asp:TextBox>
+                Obsługa Ciężkiego Sprzętu <asp:TextBox ID="Obsluga_ciezkiego_sprzetu" runat="server" Height="18px" Width="27px">1</asp:TextBox>
             </div>
             <div class="text-center">
-                Okultyzm <asp:TextBox ID="TextBox55" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Sztuka Przetrwania <asp:TextBox ID="TextBox56" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Perswazja <asp:TextBox ID="TextBox57" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Ślusarstwo <asp:TextBox ID="TextBox58" runat="server" Height="18px" Width="27px">1</asp:TextBox>
+                Okultyzm <asp:TextBox ID="Okultyzm" runat="server" Height="18px" Width="27px">5</asp:TextBox>
+                Sztuka Przetrwania <asp:TextBox ID="Sztuka_przetrwania" runat="server" Height="18px" Width="27px">10</asp:TextBox>
+                Perswazja <asp:TextBox ID="Perswazja" runat="server" Height="18px" Width="27px">10</asp:TextBox>
+                Ślusarstwo <asp:TextBox ID="Slusarstwo" runat="server" Height="18px" Width="27px">1</asp:TextBox>
             </div>
             <div class="text-center">
-                Język Ojczysty <asp:TextBox ID="TextBox59" runat="server" Height="18px" Width="27px"></asp:TextBox>
-                Pierwsza Pomoc <asp:TextBox ID="TextBox60" runat="server" Height="18px" Width="27px">30</asp:TextBox>
-                Tropienie <asp:TextBox ID="TextBox61" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Korzystanie z Bibliotek <asp:TextBox ID="TextBox62" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+                Język Ojczysty <asp:TextBox ID="Jezyk_ojczysty" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                Pierwsza Pomoc <asp:TextBox ID="Pierwsza_pomoc" runat="server" Height="18px" Width="27px">30</asp:TextBox>
+                Tropienie <asp:TextBox ID="Tropienie" runat="server" Height="18px" Width="27px">10</asp:TextBox>
+                Korzystanie z Bibliotek <asp:TextBox ID="Korzystanie_z_bibliotek" runat="server" Height="18px" Width="27px">20</asp:TextBox>
             </div>
             <div class="text-center">
-                Pilotowanie <asp:TextBox ID="TextBox63" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Ukrywanie <asp:TextBox ID="TextBox64" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+                Pilotowanie <asp:TextBox ID="Pilotowanie" runat="server" Height="18px" Width="27px">1</asp:TextBox>
+                Ukrywanie <asp:TextBox ID="Ukrywanie" runat="server" Height="18px" Width="27px">20</asp:TextBox>
             </div>
             <h2 class="text-center">UZBROJENIE</h2>
 
