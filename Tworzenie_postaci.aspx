@@ -2,9 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <html>
         <body>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Konto.aspx">Powrót</asp:HyperLink>
             <h2 class="text-center">
                 <asp:Label ID="Label1" runat="server" Text="Udało się dodać postać!" Visible="False" ForeColor="#33CC33"></asp:Label>
                 </h2>
+            
             <h1 class="text-center">
                 Tworzenie Badacza
             </h1>
@@ -160,13 +162,15 @@
             <div class="text-center">
                 <asp:TextBox ID="Historia_Badacza" runat="server" Height="254px" Width="1171px" BackColor="White" TextMode="MultiLine"></asp:TextBox>
             </div>
+            <br />
 
             <h2 class="text-center">EKWIPUNEK</h2>
             <div class="text-center">
                 <asp:TextBox ID="Ekwipunek" runat="server" Height="185px" Width="820px" TextMode="MultiLine"></asp:TextBox>
                 </div>
+            <br />
             <div class="text-center">
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Konto.aspx">Powrót</asp:HyperLink>
+                
             <asp:Button ID="Koniec" runat="server" Text="Zakończ" OnClick="Koniec_Click" />
                 </div>
             

@@ -15,6 +15,15 @@ namespace Cthulhu_Inz
     {
 
         /// <summary>
+        /// Kontrolka HyperLink1.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+
+        /// <summary>
         /// Kontrolka Label1.
         /// </summary>
         /// <remarks>
@@ -724,15 +733,6 @@ namespace Cthulhu_Inz
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Ekwipunek;
-
-        /// <summary>
-        /// Kontrolka HyperLink1.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
 
         /// <summary>
         /// Kontrolka Koniec.
