@@ -34,7 +34,7 @@ namespace Cthulhu_Inz
             dataReader.Read();
             int UzytkownikID = (int)dataReader["IDUzytkownika"];
             myConnection.Close();
-                using (SqlCommand cmd = new SqlCommand("SELECT Imie, Nazwisko, Profesja FROM Postac where IDUzytkownika= '" +UzytkownikID+"'", myConnection))
+                using (SqlCommand cmd = new SqlCommand("SELECT Imię, Nazwisko, Profesja FROM Postac where IDUzytkownika= '" + UzytkownikID + "'", myConnection))
                 {
                     List<Postac> postacie = new List<Postac>();
                     cmd.CommandType = CommandType.Text;
@@ -45,7 +45,7 @@ namespace Cthulhu_Inz
                         {
                             postacie.Add(new Postac
                             {
-                                Imie = sdr["Imie"].ToString(),
+                                Imie = sdr["Imię"].ToString(),
                                 Nazwisko = sdr["Nazwisko"].ToString(),
                                 Profesja = sdr["Profesja"].ToString()
 
@@ -54,7 +54,7 @@ namespace Cthulhu_Inz
                     }
                     myConnection.Close();
                     return postacie;
-                }
+            }
             
         }
 

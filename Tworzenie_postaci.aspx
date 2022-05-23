@@ -19,7 +19,7 @@
                 Profesja 
             <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="Profesja" DataTextField="Nazwa_Profesji" DataValueField="Nazwa_Profesji" AppendDataBoundItems="true">
                 <asp:ListItem Selected="True">--Wybierz profesję--</asp:ListItem>
-            </asp:DropDownList>
+            </asp:DropDownList>Mie
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="DropDownList1" InitialValue="--Wybierz profesję--" ErrorMessage="Musisz najpierw wybrać profesję" ForeColor="Red">
                     </asp:RequiredFieldValidator>
                 <asp:SqlDataSource ID="Profesja" runat="server" ConnectionString="<%$ ConnectionStrings:CthulhuDBConnectionString %>" SelectCommand="SELECT [Nazwa_Profesji] FROM [Profesja]"></asp:SqlDataSource>
@@ -70,6 +70,9 @@
             <div class="text-center"
             <asp:Label ID="Umiejetnosci_dodawanie" runat="server" Text="Label" Visible="False" ></asp:Label>
                 </div>
+            <div class="text-center"
+            <asp:Label ID="Umiejetnosci_zainteresowania" runat="server" Text="Label" Visible="False" ></asp:Label>
+                </div>
             <div class="text-center">
                 Antropologia <asp:TextBox ID="Antropologia" runat="server" Height="18px" Width="27px">1</asp:TextBox>
                 Księgowość <asp:TextBox ID="Ksiegowosc" runat="server" Height="18px" Width="27px">5</asp:TextBox>
@@ -78,7 +81,7 @@
             </div>
             <div class="text-center">
                 Archeologia <asp:TextBox ID="Archeologia" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Majętność <asp:TextBox ID="Majetnosc" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                Majętność <asp:TextBox ID="Majetnosc" runat="server" Height="18px" Width="27px">0</asp:TextBox>
                 Prawo <asp:TextBox ID="Prawo" runat="server" Height="18px" Width="27px">5</asp:TextBox>
                 Urok Osobisty <asp:TextBox ID="Urok_osobisty" runat="server" Height="18px" Width="27px">15</asp:TextBox>
             </div>
@@ -102,7 +105,7 @@
             </div>
             <div class="text-center">
                 Wiedza o Naturze <asp:TextBox ID="Wiedza_o_naturze" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Elektryka <asp:TextBox ID="Elekrtyka" runat="server" Height="18px" Width="27px">10</asp:TextBox>
+                Elektryka <asp:TextBox ID="Elektryka" runat="server" Height="18px" Width="27px">10</asp:TextBox>
                 Nauka <asp:TextBox ID="Nauka" runat="server" Height="18px" Width="27px">1</asp:TextBox>
                 Skakanie <asp:TextBox ID="Skakanie" runat="server" Height="18px" Width="27px">20</asp:TextBox>
             </div>
@@ -144,16 +147,16 @@
 
             <div class="text-center">
             <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="Uzbrojenie" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr" AppendDataBoundItems="true">
-                <asp:ListItem Selected="True">--Wybierz uzbrojenie--</asp:ListItem>
+                <asp:ListItem Selected="True">Brak</asp:ListItem>
                 </asp:DropDownList>
                 <asp:DropDownList ID="DropDownList3" runat="server" DataSourceID="Uzbrojenie" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr"  AppendDataBoundItems="true">
-                <asp:ListItem Selected="True">--Wybierz uzbrojenie--</asp:ListItem>
+                <asp:ListItem Selected="True">Brak</asp:ListItem>
                 </asp:DropDownList>
                 <asp:DropDownList ID="DropDownList4" runat="server" DataSourceID="Uzbrojenie" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr"  AppendDataBoundItems="true">
-                <asp:ListItem Selected="True">--Wybierz uzbrojenie--</asp:ListItem>
+                <asp:ListItem Selected="True">Brak</asp:ListItem>
                 </asp:DropDownList>
                 <asp:DropDownList ID="DropDownList5" runat="server" DataSourceID="Uzbrojenie" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr"  AppendDataBoundItems="true">
-                <asp:ListItem Selected="True">--Wybierz uzbrojenie--</asp:ListItem>
+                <asp:ListItem Selected="True">Brak</asp:ListItem>
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="Uzbrojenie" runat="server" ConnectionString="<%$ ConnectionStrings:CthulhuDBConnectionString %>" SelectCommand="SELECT [Nazwa_uzbr] FROM [Uzbrojenie]"></asp:SqlDataSource>
                 </div>
@@ -179,7 +182,7 @@
     </html>
             
 
-            </div>
+            
             
 
         </asp:Content>

@@ -258,6 +258,15 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.Label Umiejetnosci_dodawanie;
 
         /// <summary>
+        /// Kontrolka Umiejetnosci_zainteresowania.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Umiejetnosci_zainteresowania;
+
+        /// <summary>
         /// Kontrolka Antropologia.
         /// </summary>
         /// <remarks>
@@ -447,13 +456,13 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Wiedza_o_naturze;
 
         /// <summary>
-        /// Kontrolka Elekrtyka.
+        /// Kontrolka Elektryka.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Elekrtyka;
+        protected global::System.Web.UI.WebControls.TextBox Elektryka;
 
         /// <summary>
         /// Kontrolka Nauka.
