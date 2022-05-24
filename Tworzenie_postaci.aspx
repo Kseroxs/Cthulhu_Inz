@@ -3,9 +3,6 @@
     <html>
         <body>
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Konto.aspx">Powrót</asp:HyperLink>
-            <h2 class="text-center">
-                <asp:Label ID="Label1" runat="server" Text="Udało się dodać postać!" Visible="False" ForeColor="#33CC33"></asp:Label>
-                </h2>
             
             <h1 class="text-center">
                 Tworzenie Badacza

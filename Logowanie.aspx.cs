@@ -31,7 +31,9 @@ namespace Cthulhu_Inz
 
             if (kontoIstnieje > 0)
             {
+
                 FormsAuthentication.RedirectFromLoginPage(login.Text, RememberMe.Checked);
+
             }
             InvalidCredentialsMessage.Visible = true;
 

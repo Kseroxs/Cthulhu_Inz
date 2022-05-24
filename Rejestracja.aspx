@@ -21,7 +21,7 @@
 
         </h2>
             <p>
-        <asp:Label ID="InvalidCredentialsMessage" runat="server" ForeColor="Red" Text="Podany Login jest zajęty."
+        <asp:Label ID="InvalidCredentialsMessage" runat="server" ForeColor="Red" Text="Podany login jest zajęty."
             Visible="False"></asp:Label> </p>
             <asp:Button ID="Zarejestruj" runat="server" Text="Zarejestruj" Width="144px" OnClick="Zarejestruj_Click" />
 

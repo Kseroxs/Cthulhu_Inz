@@ -197,6 +197,7 @@
     <Content Include="Konto.aspx" />
     <Content Include="Logowanie.aspx" />
     <Content Include="Content\plus.png" />
+    <Content Include="PostacEdycja.aspx" />
     <Content Include="Rejestracja.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -283,6 +284,13 @@
       <DependentUpon>Logowanie.aspx</DependentUpon>
     </Compile>
     <Compile Include="Postac.cs" />
+    <Compile Include="PostacEdycja.aspx.cs">
+      <DependentUpon>PostacEdycja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostacEdycja.aspx.designer.cs">
+      <DependentUpon>PostacEdycja.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rejestracja.aspx.cs">
       <DependentUpon>Rejestracja.aspx</DependentUpon>

@@ -21,7 +21,7 @@ namespace Cthulhu_Inz
         public string Liczba_pkt;
         protected void Page_Load(object sender, EventArgs e)
         {
-            login = User.Identity.Name;
+
         }
         //jeden rzut kością k6
         Random kostkak6 = new Random();
@@ -447,7 +447,7 @@ namespace Cthulhu_Inz
 
             myConnection.Open();
             //sprawdzenie IDUzytkownika
-            string query1 = "Select [IDUzytkownika] from[dbo].[Users] where Login = '" + login + "'";
+            string query1 = "Select [IDUzytkownika] from[dbo].[Users] where Login = '" + User.Identity.Name + "'";
             SqlCommand command = new SqlCommand(query1, myConnection);
             SqlDataReader dataReader = command.ExecuteReader();
             dataReader.Read();
@@ -547,8 +547,8 @@ namespace Cthulhu_Inz
             insertCommand.ExecuteNonQuery();
             myConnection.Close();
 
-                Label1.Visible = true;
-            
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Postać została dodana!');window.location ='Konto.aspx';", true);
+
 
 
         }

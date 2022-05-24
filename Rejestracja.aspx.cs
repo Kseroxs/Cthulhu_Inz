@@ -40,7 +40,7 @@ namespace Cthulhu_Inz
                 insertCommand.Parameters.AddWithValue("@haslo", haslo.Text);
                 insertCommand.ExecuteNonQuery();
                 myConnection.Close();
-                Response.Redirect("Logowanie.aspx");
+                ScriptManager.RegisterStartupScript(this, this.GetType(),"alert","alert('Konto zostało zapisane.');window.location ='Logowanie.aspx';",true);
             }
 
         }
