@@ -7,7 +7,9 @@
             <hr noshade="noshade"/>
         </header>
         <body>
-            Stwórz Kampanię i dodaj do niej członków. <asp:Button ID="Stworz_kampanie" runat="server" Text="STWÓRZ KAMPANIĘ" OnClick="Stworz_kampanie_Click"  />
+            <div class="text-center">
+            <asp:Button ID="Stworz_kampanie" runat="server" Text="STWÓRZ KAMPANIĘ" OnClick="Stworz_kampanie_Click"  />
+                </div>
             <br />
             <br />
             <div class="text-center">
@@ -27,6 +29,26 @@
                 </div>
             <br />
             <h3>Aktywne Kampanie</h3>
+            <div class="text-center">
+            <asp:GridView ID="GridView1" runat="server" Width="466px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" >
+                <Columns>  
+                    <asp:TemplateField><ItemTemplate>  
+                        <asp:LinkButton ID = "LinkButton" runat="server"  
+            PostBackUrl='<%# "~/KampaniaEdycja.aspx?IDKampanii="+ Eval("IDKampanii") %>' Text="Edytuj"></asp:LinkButton>  
+                                       </ItemTemplate>
+
+                    </asp:TemplateField>
+                </Columns>
+                <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                <SortedDescendingHeaderStyle BackColor="#242121" />
+                </asp:GridView>
+                </div>
             
 
         </body>

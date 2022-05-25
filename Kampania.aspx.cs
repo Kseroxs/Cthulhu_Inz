@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -14,6 +15,8 @@ namespace Cthulhu_Inz
         SqlConnection myConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["CthulhuDBConnectionString"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
+            GridView1.DataSource = this.Lista();
+            GridView1.DataBind();
 
         }
 
@@ -37,6 +40,31 @@ namespace Cthulhu_Inz
             insertCommand.Parameters.AddWithValue("@Straznik", User.Identity.Name);
             insertCommand.ExecuteNonQuery();
             myConnection.Close();
+
+        }
+        public List<Kampanie> Lista()
+        {
+            using (SqlCommand cmd = new SqlCommand("SELECT IDKampanii,Nazwa,Straznik FROM Kampania where Straznik= '" + User.Identity.Name + "'", myConnection))
+            {
+                List<Kampanie> kampanie = new List<Kampanie>();
+                cmd.CommandType = CommandType.Text;
+                myConnection.Open();
+                using (SqlDataReader sdr = cmd.ExecuteReader())
+                {
+                    while (sdr.Read())
+                    {
+                        kampanie.Add(new Kampanie
+                        {
+                            IDKampanii = Convert.ToInt32(sdr["IDKampanii"]),
+                            Nazwa = sdr["Nazwa"].ToString(),
+                            Straznik = sdr["Straznik"].ToString()
+
+                        });
+                    }
+                }
+                myConnection.Close();
+                return kampanie;
+            }
 
         }
     }

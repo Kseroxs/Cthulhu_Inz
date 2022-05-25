@@ -194,6 +194,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Kampania.aspx" />
+    <Content Include="KampaniaEdycja.aspx" />
     <Content Include="Konto.aspx" />
     <Content Include="Logowanie.aspx" />
     <Content Include="Content\plus.png" />
@@ -269,6 +270,14 @@
     <Compile Include="Kampania.aspx.designer.cs">
       <DependentUpon>Kampania.aspx</DependentUpon>
     </Compile>
+    <Compile Include="KampaniaEdycja.aspx.cs">
+      <DependentUpon>KampaniaEdycja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KampaniaEdycja.aspx.designer.cs">
+      <DependentUpon>KampaniaEdycja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kampanie.cs" />
     <Compile Include="Konto.aspx.cs">
       <DependentUpon>Konto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

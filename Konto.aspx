@@ -26,7 +26,7 @@
                 <Columns>  
                     <asp:TemplateField><ItemTemplate>  
                         <asp:LinkButton ID = "LinkButton" runat="server"  
-            PostBackUrl='<%# "~/PostacEdycja.aspx?IDPostaci="+ Eval("IDPostaci") %>' Text="Edit"></asp:LinkButton>  
+            PostBackUrl='<%# "~/PostacEdycja.aspx?IDPostaci="+ Eval("IDPostaci") %>' Text="Edytuj"></asp:LinkButton>  
                                        </ItemTemplate>
 
                     </asp:TemplateField>

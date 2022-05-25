@@ -11,26 +11,8 @@ namespace Cthulhu_Inz
 {
 
 
-    public partial class Kampania
+    public partial class KampaniaEdycja
     {
-
-        /// <summary>
-        /// Kontrolka HyperLink1.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
-
-        /// <summary>
-        /// Kontrolka Stworz_kampanie.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Stworz_kampanie;
 
         /// <summary>
         /// Kontrolka Label1.
@@ -78,21 +60,30 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Opis;
 
         /// <summary>
-        /// Kontrolka Dodaj_kampanie.
+        /// Kontrolka Edytuj_kampanie.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Dodaj_kampanie;
+        protected global::System.Web.UI.WebControls.Button Edytuj_kampanie;
 
         /// <summary>
-        /// Kontrolka GridView1.
+        /// Kontrolka TextBox1.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+
+        /// <summary>
+        /// Kontrolka Button1.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }
