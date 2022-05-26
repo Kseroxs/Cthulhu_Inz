@@ -18,14 +18,14 @@ namespace Cthulhu_Inz
             if (!IsPostBack)
             {
                 postacid = Page.Request.QueryString["IDPostaci"].ToString();
-                BindTextBoxvalues();
+                PrzypiszWartosci();
             }
 
         }
-        private void BindTextBoxvalues()
+        private void PrzypiszWartosci()
         {
             myConnection.Open();
-            string query1 = "Select [Imię] from [dbo].[Postac] where IDPostaci = " + postacid;
+            string query1 = "Select [Imię] from [dbo].[Postac] where IDPostaci = '" + postacid + "'";
             SqlCommand command = new SqlCommand(query1, myConnection);
             SqlDataReader dataReader = command.ExecuteReader();
             dataReader.Read();

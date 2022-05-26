@@ -16,7 +16,6 @@ namespace Cthulhu_Inz
         public int[] k6_2 = new int[3];
 
         public int[] k6 = new int[8];
-        string login;
 
         public string Liczba_pkt;
         protected void Page_Load(object sender, EventArgs e)
