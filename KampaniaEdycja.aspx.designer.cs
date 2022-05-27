@@ -114,13 +114,22 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// Kontrolka Brak.
+        /// Kontrolka BrakPostaciLabel.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Brak;
+        protected global::System.Web.UI.WebControls.Label BrakPostaciLabel;
+
+        /// <summary>
+        /// Kontrolka PostacieGraczaLabel.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label PostacieGraczaLabel;
 
         /// <summary>
         /// Kontrolka GridView1.

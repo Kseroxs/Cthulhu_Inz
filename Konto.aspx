@@ -4,7 +4,7 @@
         <body>
             <h1>
                 <asp:Panel runat="server" ID="AuthenticatedMessagePanel">
-        <asp:Label runat="server" ID="WelcomeBackMessage"></asp:Label>
+        <asp:Label runat="server" ID="Powitanie"></asp:Label>
                     
     </asp:Panel>
                 
@@ -26,7 +26,7 @@
                 <Columns>  
                     <asp:TemplateField><ItemTemplate>  
                         <asp:LinkButton ID = "LinkButton" runat="server"  
-            PostBackUrl='<%# "~/PostacEdycja.aspx?IDPostaci="+ Eval("IDPostaci") %>' Text="Edytuj"></asp:LinkButton>  
+            PostBackUrl='<%# "~/Sesja.aspx?IDPostaci="+ Eval("IDPostaci") %>' Text="Przejdź"></asp:LinkButton>  
                                        </ItemTemplate>
 
                     </asp:TemplateField>

@@ -28,7 +28,29 @@
                 <asp:Button ID="Dodaj_kampanie" runat="server" Text="Dodaj" OnClick="Dodaj_kampanie_Click" Visible="False" />
                 </div>
             <br />
-            <h3>Aktywne Kampanie</h3>
+            <h3>Aktywne Kampanie Twoich Postaci</h3>
+            <div class="text-center">
+            <asp:GridView ID="GridView2" runat="server" Width="466px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" >
+                <Columns>  
+                    <asp:TemplateField><ItemTemplate>  
+                        <asp:LinkButton ID = "LinkButton" runat="server"  
+            PostBackUrl='<%# "~/Sesja.aspx?IDPostaci="+ Eval("IDPostaci") %>' Text="Przejdź"></asp:LinkButton>  
+                                       </ItemTemplate>
+
+                    </asp:TemplateField>
+                </Columns>
+                <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                <SortedDescendingHeaderStyle BackColor="#242121" />
+                </asp:GridView>
+                </div>
+            <hr noshade="noshade"/>
+            <h3>Twoje Kampanie</h3>
             <div class="text-center">
             <asp:GridView ID="GridView1" runat="server" Width="466px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" >
                 <Columns>  

@@ -18,7 +18,7 @@ namespace Cthulhu_Inz
         {
             if (Request.IsAuthenticated)
             {
-                WelcomeBackMessage.Text = "Witamy z powrotem, " + User.Identity.Name + "!";
+                Powitanie.Text = "Witamy z powrotem, " + User.Identity.Name + "!";
                 AuthenticatedMessagePanel.Visible = true;
             }
             myConnection.Open();

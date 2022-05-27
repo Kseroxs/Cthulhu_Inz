@@ -15,7 +15,9 @@ namespace Cthulhu_Inz
         SqlConnection myConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["CthulhuDBConnectionString"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView1.DataSource = this.Lista();
+            GridView2.DataSource = this.ListaKampanii();
+            GridView2.DataBind();
+            GridView1.DataSource = this.ListaKampaniiUzytkownika();
             GridView1.DataBind();
 
         }
@@ -40,9 +42,10 @@ namespace Cthulhu_Inz
             insertCommand.Parameters.AddWithValue("@Straznik", User.Identity.Name);
             insertCommand.ExecuteNonQuery();
             myConnection.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Udało się stworzyć kampanię "+ Nazwa_kampanii +"');window.location ='Kampania.aspx';", true);
 
         }
-        public List<Kampanie> Lista()
+        public List<Kampanie> ListaKampaniiUzytkownika()
         {
             using (SqlCommand cmd = new SqlCommand("SELECT IDKampanii,Nazwa,Straznik FROM Kampania where Straznik= '" + User.Identity.Name + "'", myConnection))
             {
@@ -55,6 +58,36 @@ namespace Cthulhu_Inz
                     {
                         kampanie.Add(new Kampanie
                         {
+                            IDKampanii = Convert.ToInt32(sdr["IDKampanii"]),
+                            Nazwa = sdr["Nazwa"].ToString(),
+                            Straznik = sdr["Straznik"].ToString()
+
+                        });
+                    }
+                }
+                myConnection.Close();
+                return kampanie;
+            }
+
+        }
+        public List<Kampanie> ListaKampanii()
+        {
+            using (SqlCommand cmd = new SqlCommand("SELECT Postac.Imię,Postac.IDPostaci, Users.IDUzytkownika,Postac.IDUzytkownika,Users.[Login], Kampania.IDKampanii,Nazwa,Straznik FROM Kampania" +
+                " inner join Postac on Postac.IDKampanii = Kampania.IDKampanii" +
+                " inner join Users on Users.[IDUzytkownika] = Postac.IDUzytkownika " +
+                "where[Login] = '"+User.Identity.Name+"' and Kampania.IDKampanii = Postac.IDKampanii", myConnection))
+            {
+                List<Kampanie> kampanie = new List<Kampanie>();
+                cmd.CommandType = CommandType.Text;
+                myConnection.Open();
+                using (SqlDataReader sdr = cmd.ExecuteReader())
+                {
+                    while (sdr.Read())
+                    {
+                        kampanie.Add(new Kampanie
+                        {
+                            IDPostaci=Convert.ToInt32(sdr["IDPostaci"]),
+                            Imie = sdr["Imię"].ToString(),
                             IDKampanii = Convert.ToInt32(sdr["IDKampanii"]),
                             Nazwa = sdr["Nazwa"].ToString(),
                             Straznik = sdr["Straznik"].ToString()

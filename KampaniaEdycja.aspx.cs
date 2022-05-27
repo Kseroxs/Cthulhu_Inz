@@ -29,9 +29,9 @@ namespace Cthulhu_Inz
 
         }
 
+        //edytowanie kampanii w bazie
         protected void Edytuj_kampanie_Click(object sender, EventArgs e)
         {
-            //edytowanie kampanii w bazie
             myConnection.Open();
             string query = "UPDATE Kampania SET Nazwa = '" + Nazwa_kampanii.Text + "', Opis = '" + Opis.Text + "' where IDKampanii = '"+kampaniaid+"'";
             SqlCommand update = new SqlCommand(query, myConnection);
@@ -39,24 +39,20 @@ namespace Cthulhu_Inz
             myConnection.Close();
             ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Udało się edytować kampanię');window.location ='Kampania.aspx';", true);
         }
-
+        //tworzenie listy postaci gracza, które można dodać do kampanii
         protected void Szukaj_Click(object sender, EventArgs e)
         {
-            //tworzenie listy postaci gracza, które można dodać do kampanii
-            try
-            {
+            
                 GridView1.DataSource = this.Lista();
                 GridView1.DataBind();
-            }
-            catch (InvalidCastException)
-            {
-                Brak.Visible = true;
-            } 
+            
         }
         //lista postaci gracza
         public List<Postac> Lista()
         {
-            using (SqlCommand cmd = new SqlCommand("select Postac.IDPostaci,Postac.IDUzytkownika,Users.[Login],Postac.Imię,Postac.Nazwisko,Postac.Profesja from Postac INNER JOIN Users on Postac.IDUzytkownika = Users.IDUzytkownika where[Login] = '" + LoginTxt.Text + "' and IDKampanii is null;", myConnection))
+            using (SqlCommand cmd = new SqlCommand("select Postac.IDPostaci,Postac.IDUzytkownika,Users.[Login],Postac.Imię,Postac.Nazwisko,Postac.Profesja from Postac " +
+                "INNER JOIN Users on Postac.IDUzytkownika = Users.IDUzytkownika " +
+                "where[Login] = '" + LoginTxt.Text + "' and IDKampanii is null;", myConnection))
             {
                 List<Postac> postacie = new List<Postac>();
                 cmd.CommandType = CommandType.Text;
@@ -65,14 +61,24 @@ namespace Cthulhu_Inz
                 {
                     while (sdr.Read())
                     {
-                        postacie.Add(new Postac
-                        {
-                            IDPostaci= Convert.ToInt32(sdr["IDPostaci"].ToString()),
-                            Imie = sdr["Imię"].ToString(),
-                            Nazwisko = sdr["Nazwisko"].ToString(),
-                            Profesja = sdr["Profesja"].ToString()
+                        
+                            postacie.Add(new Postac
+                            {
+                                IDPostaci = Convert.ToInt32(sdr["IDPostaci"].ToString()),
+                                Imie = sdr["Imię"].ToString(),
+                                Nazwisko = sdr["Nazwisko"].ToString(),
+                                Profesja = sdr["Profesja"].ToString()
 
-                        });
+                            });
+                        
+                    }
+                    if (sdr.HasRows)
+                    {
+                        PostacieGraczaLabel.Visible = true;
+                    }
+                    else
+                    {
+                        BrakPostaciLabel.Visible = true;
                     }
                 }
                 myConnection.Close();

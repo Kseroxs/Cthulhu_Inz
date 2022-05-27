@@ -5,7 +5,7 @@
             Edytowanie Kampanii
         </h1>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Kampania.aspx">Powrót</asp:HyperLink>
-        <asp:Button ID="Usun_kampanie" runat="server" Text="Usuń Kampanię" style="float:right;" BackColor="#FF3300" OnClick="Usun_kampanie_Click"/>
+        <asp:Button ID="Usun_kampanie" runat="server" Text="Usuń Kampanię" style="float:right;" BackColor="#FF3300" OnClick="Usun_kampanie_Click" Height="40px"/>
             
     </header>
     <body>
@@ -59,7 +59,10 @@
         </asp:TextBox><asp:Button ID="Button1" runat="server" Text="Szukaj" OnClick="Szukaj_Click" />
             </div>
         <div class="text-center">
-            <asp:Label ID="Brak" runat="server" Text="Brak postaci lub nie ma gracza o takim loginie." ForeColor="#FF3300" Visible="False"></asp:Label>
+            <asp:Label ID="BrakPostaciLabel" runat="server" Text="Brak postaci lub nie ma gracza o takim loginie." ForeColor="#FF3300" Visible="False"></asp:Label>
+        </div>
+        <div>
+            <asp:Label ID="PostacieGraczaLabel" runat="server" Text="Postacie gracza" Visible="false" Font-Size="large"></asp:Label>
         </div>
         <div class="text-center">
             <asp:GridView ID="GridView1" runat="server" Width="466px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" OnRowCommand="GridView1_RowCommand" >

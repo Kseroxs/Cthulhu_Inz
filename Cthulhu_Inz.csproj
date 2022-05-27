@@ -228,6 +228,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Sesja.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Tworzenie_postaci.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -307,6 +308,13 @@
     </Compile>
     <Compile Include="Rejestracja.aspx.designer.cs">
       <DependentUpon>Rejestracja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sesja.aspx.cs">
+      <DependentUpon>Sesja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sesja.aspx.designer.cs">
+      <DependentUpon>Sesja.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

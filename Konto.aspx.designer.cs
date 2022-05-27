@@ -24,13 +24,13 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.Panel AuthenticatedMessagePanel;
 
         /// <summary>
-        /// Kontrolka WelcomeBackMessage.
+        /// Kontrolka Powitanie.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label WelcomeBackMessage;
+        protected global::System.Web.UI.WebControls.Label Powitanie;
 
         /// <summary>
         /// Kontrolka LoginStatus1.
