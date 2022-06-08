@@ -50,8 +50,8 @@ namespace Cthulhu_Inz
         //lista postaci gracza
         public List<Postac> Lista()
         {
-            using (SqlCommand cmd = new SqlCommand("select Postac.IDPostaci,Postac.IDUzytkownika,Users.[Login],Postac.Imię,Postac.Nazwisko,Postac.Profesja from Postac " +
-                "INNER JOIN Users on Postac.IDUzytkownika = Users.IDUzytkownika " +
+            using (SqlCommand cmd = new SqlCommand("select Postac.IDPostaci,Postac.IDUzytkownika,Uzytkownicy.[Login],Postac.Imię,Postac.Nazwisko,Postac.Profesja from Postac " +
+                "INNER JOIN Uzytkownicy on Postac.IDUzytkownika = Uzytkownicy.IDUzytkownika " +
                 "where[Login] = '" + LoginTxt.Text + "' and IDKampanii is null;", myConnection))
             {
                 List<Postac> postacie = new List<Postac>();

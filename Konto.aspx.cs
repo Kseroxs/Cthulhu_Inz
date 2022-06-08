@@ -23,7 +23,7 @@ namespace Cthulhu_Inz
             }
             myConnection.Open();
             //sprawdzenie IDUzytkownika
-            string query1 = "Select [IDUzytkownika] from[dbo].[Users] where Login = '" + User.Identity.Name + "'";
+            string query1 = "Select [IDUzytkownika] from[dbo].[Uzytkownicy] where Login = '" + User.Identity.Name + "'";
             SqlCommand command = new SqlCommand(query1, myConnection);
             SqlDataReader dataReader = command.ExecuteReader();
             dataReader.Read();

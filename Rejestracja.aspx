@@ -17,7 +17,7 @@
     <h2>Hasło: 
         <asp:TextBox ID="haslo" runat="server" type="password"></asp:TextBox>
 
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="haslo" ErrorMessage="Hasło musi zawierać conajmniej 6 znaków" Font-Size="Small" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="haslo" ErrorMessage="Hasło nie może być puste" Font-Size="Small" ForeColor="#FF3300"></asp:RequiredFieldValidator>
 
         </h2>
             <p>

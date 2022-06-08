@@ -327,8 +327,8 @@ namespace Cthulhu_Inz
             }
             Pula_pkt.Visible = true;
             Pula_pkt.Text = "Pula punktów do wykorzystania na poniższe umiejętności: "+ pula_pkt.ToString();
-            //DODAC PUNKTY Z ZAINTERESOWAN!!!!
-            Umiejetnosci_zainteresowania.Text="Dodatkowo jako zainteresowania możesz rozdysponować "+k6_2[1]+" punktów na wszystkie umiejętności";
+            //punkty z zainteresowań
+            Umiejetnosci_zainteresowania.Text="Dodatkowo jako zainteresowania możesz rozdysponować "+k6_2[1]*2+" punktów na wszystkie umiejętności";
             Umiejetnosci_zainteresowania.Visible = true;
             Unik.Text = (k6[1] / 2).ToString();
 
@@ -446,7 +446,7 @@ namespace Cthulhu_Inz
 
             myConnection.Open();
             //sprawdzenie IDUzytkownika
-            string query1 = "Select [IDUzytkownika] from[dbo].[Users] where Login = '" + User.Identity.Name + "'";
+            string query1 = "Select [IDUzytkownika] from[dbo].[Uzytkownicy] where Login = '" + User.Identity.Name + "'";
             SqlCommand command = new SqlCommand(query1, myConnection);
             SqlDataReader dataReader = command.ExecuteReader();
             dataReader.Read();

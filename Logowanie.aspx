@@ -11,7 +11,7 @@
         </p>
     <asp:Button ID="Zalogowanie" runat="server" Text="Zaloguj" OnClick="Zalogowanie_Click" />
     <p>
-        <asp:CheckBox ID="RememberMe" runat="server" Text="Remember Me" /> </p>
+        <asp:CheckBox ID="RememberMe" runat="server" Text="Remember Me" Visible="False" /> </p>
     <p>
     <p>
         <asp:Label ID="InvalidCredentialsMessage" runat="server" ForeColor="Red" Text="Niepoprawny login lub hasło." Font-Size="Small"

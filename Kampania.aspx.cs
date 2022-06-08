@@ -72,9 +72,9 @@ namespace Cthulhu_Inz
         }
         public List<Kampanie> ListaKampanii()
         {
-            using (SqlCommand cmd = new SqlCommand("SELECT Postac.Imię,Postac.IDPostaci, Users.IDUzytkownika,Postac.IDUzytkownika,Users.[Login], Kampania.IDKampanii,Nazwa,Straznik FROM Kampania" +
+            using (SqlCommand cmd = new SqlCommand("SELECT Postac.Imię,Postac.IDPostaci, Uzytkownicy.IDUzytkownika,Postac.IDUzytkownika,Uzytkownicy.[Login], Kampania.IDKampanii,Nazwa,Straznik FROM Kampania" +
                 " inner join Postac on Postac.IDKampanii = Kampania.IDKampanii" +
-                " inner join Users on Users.[IDUzytkownika] = Postac.IDUzytkownika " +
+                " inner join Uzytkownicy on Uzytkownicy.[IDUzytkownika] = Postac.IDUzytkownika " +
                 "where[Login] = '"+User.Identity.Name+"' and Kampania.IDKampanii = Postac.IDKampanii", myConnection))
             {
                 List<Kampanie> kampanie = new List<Kampanie>();

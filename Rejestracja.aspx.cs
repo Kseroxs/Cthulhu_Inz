@@ -23,7 +23,7 @@ namespace Cthulhu_Inz
         protected void Zarejestruj_Click(object sender, EventArgs e)
         {
             myConnection.Open();
-            string query1 = "Select count(*) from[dbo].[Users] where Login = '" + login.Text.Trim()+ "'";
+            string query1 = "Select count(*) from[dbo].[Uzytkownicy] where Login = '" + login.Text.Trim()+ "'";
             SqlCommand command = new SqlCommand(query1, myConnection);
             int loginIstnieje = int.Parse(command.ExecuteScalar().ToString());
             if (loginIstnieje > 0)
@@ -33,7 +33,7 @@ namespace Cthulhu_Inz
             }
             else
             {
-                string query = "Insert into [dbo].[Users] (Login,Email,Haslo) Values (@login,@email,@haslo)";
+                string query = "Insert into [dbo].[Uzytkownicy] (Login,Email,Haslo) Values (@login,@email,@haslo)";
                 SqlCommand insertCommand = new SqlCommand(query, myConnection);
                 insertCommand.Parameters.AddWithValue("@login", login.Text);
                 insertCommand.Parameters.AddWithValue("@email", email.Text);

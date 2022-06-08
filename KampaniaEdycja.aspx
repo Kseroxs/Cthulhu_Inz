@@ -59,7 +59,7 @@
         </asp:TextBox><asp:Button ID="Button1" runat="server" Text="Szukaj" OnClick="Szukaj_Click" />
             </div>
         <div class="text-center">
-            <asp:Label ID="BrakPostaciLabel" runat="server" Text="Brak postaci lub nie ma gracza o takim loginie." ForeColor="#FF3300" Visible="False"></asp:Label>
+            <asp:Label ID="BrakPostaciLabel" runat="server" Text="Brak dostępnych postaci lub nie ma gracza o takim loginie." ForeColor="#FF3300" Visible="False"></asp:Label>
         </div>
         <div>
             <asp:Label ID="PostacieGraczaLabel" runat="server" Text="Postacie gracza" Visible="false" Font-Size="large"></asp:Label>
