@@ -91,6 +91,38 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Punkty Poczytalności
+            </div>
+            <div class="col col-lg-2">
+            Szczęście
+            </div>
+            <div class="col col-lg-2">
+            Punkty Wytrzymałości
+            </div>
+            <div class="col col-lg-2">
+            Punkty Magii
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="PktPoczytalnosci" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Szczescie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="PktWytrzymalosci" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="PktMagii" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
     <hr />
     <div class="container">
         <div class="row justify-content-md-center">
@@ -105,11 +137,11 @@
             </div>
             <div class="col col-lg-2">
                 <asp:CheckBox ID="CheckBox3" runat="server" />
-            Pływanie
+            Pilotowanie
             </div>
             <div class="col col-lg-2">
                 <asp:CheckBox ID="CheckBox4" runat="server" />
-            Unik
+            Tropienie
             </div>
         </div>
         <div class="row justify-content-md-center">
@@ -121,12 +153,435 @@
                 <asp:TextBox ID="Ksiegowosc" runat="server" Height="18px" Width="27px"></asp:TextBox>
             </div>
             <div class="col col-lg-2">
+                <asp:TextBox ID="Pilotowanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Tropienie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox5" runat="server" />
+            Archeologia
+            </div>
+            <div class="col col-lg-2">
+            Majętność
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox7" runat="server" />
+            Plywanie
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox8" runat="server" />
+            Ukrywanie
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Archeologia" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Majetnosc" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
                 <asp:TextBox ID="Plywanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Ukrywanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox6" runat="server" />
+            Broń Palna (Karabin/Strzelba)
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox38" runat="server" />
+            Mechanika
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox9" runat="server" />
+            Prawo
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox10" runat="server" />
+            Unik
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="BronPalnaDluga" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Mechanika" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Prawo" runat="server" Height="18px" Width="27px"></asp:TextBox>
             </div>
             <div class="col col-lg-2">
                 <asp:TextBox ID="Unik" runat="server" Height="18px" Width="27px"></asp:TextBox>
             </div>
         </div>
     </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox11" runat="server" />
+            Broń Palna (Krótka)
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox39" runat="server" />
+            Medycyna
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox12" runat="server" />
+            Prowadzenie Samochodu
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox13" runat="server" />
+            Urok Osobisty
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="BronPalnaKrotka" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Medycyna" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="ProwadzenieSamochodu" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="UrokOsobisty" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox14" runat="server" />
+            Charakteryzacja
+            </div>
+            <div class="col col-lg-2">
+            Mity Cthulhu
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox15" runat="server" />
+            Psychoanaliza
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox16" runat="server" />
+            Walka Wręcz (Bijatyka)
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Charakteryzacja" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="MityCthulhu" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Psychoanaliza" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="WalkaWrecz" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox17" runat="server" />
+            Elektryka
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox41" runat="server" />
+            Nasłuchiwanie
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox18" runat="server" />
+            Psychologia
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox19" runat="server" />
+            Wiedza o Naturze
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Elektryka" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Nasluchiwanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Psychologia" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="WiedzaONaturze" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox20" runat="server" />
+            Gadanina
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox40" runat="server" />
+            Nauka
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox21" runat="server" />
+            Rzucanie
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox22" runat="server" />
+            Wspinaczka
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Gadanina" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Nauka" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Rzucanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Wspinaczka" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox23" runat="server" />
+            Historia
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox42" runat="server" />
+            Nawigacja
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox24" runat="server" />
+            Skakanie
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox25" runat="server" />
+            Wycena
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Historia" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Nawigacja" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Skakanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Wycena" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox26" runat="server" />
+            Jeździectwo
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox43" runat="server" />
+            Obsługa Ciężkiego Sprzętu
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox27" runat="server" />
+            Spostrzegawczość
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox28" runat="server" />
+            Zastraszanie
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Jezdziectwo" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="ObslugaCiezkiegoSprzetu" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Spostrzegawczosc" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Zastraszanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox29" runat="server" />
+            Język Obcy
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox44" runat="server" />
+            Okultyzm
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox30" runat="server" />
+            Sztuka/Rzemiosło
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox31" runat="server" />
+            Zręczne Palce
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="JezykObcy" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Okultyzm" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="SztukaRzemioslo" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="ZrecznePalce" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox32" runat="server" />
+            Język Ojczysty
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox45" runat="server" />
+            Perswazja
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox33" runat="server" />
+            Sztuka Przetrwania
+            </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="JezykOjczysty" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Perswazja" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="SztukaPrzetrwania" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox35" runat="server" />
+            Korzystanie z Bibliotek
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox34" runat="server" />
+            Pierwsza Pomoc
+            </div>
+            <div class="col col-lg-2">
+                <asp:CheckBox ID="CheckBox36" runat="server" />
+            Ślusarstwo
+            </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="KorzystanieZBibliotek" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="PierwszaPomoc" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Slusarstwo" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>
+    </div>
+    <hr />
+    <h3 class="text-center">
+        UZBROJENIE
+    </h3>
+    <div class="text-center">
+        <asp:DropDownList ID="Uzbrojenie1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr"></asp:DropDownList>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CthulhuDBConnectionString %>" SelectCommand="SELECT [Nazwa_uzbr] FROM [Uzbrojenie]"></asp:SqlDataSource>
+        <asp:Label ID="Uzbrojenie1Label" runat="server" Text=""></asp:Label>
+    </div>
+    <br />
+    <h3 class="text-center">
+        HISTORIA BADACZA
+    </h3>
+    <div class="text-center">
+        <asp:TextBox ID="HistoriaBadacza" runat="server" Height="254px" Width="1171px" TextMode="MultiLine"></asp:TextBox>
+    </div>
+    <br />
+    <h3 class="text-center">
+        EKWIPUNEK
+    </h3>
+    <div class="text-center">
+        <asp:TextBox ID="Ekwipunek" runat="server" Height="185px" Width="820px" TextMode="MultiLine"></asp:TextBox>
+    </div>
+    <br />
     </body>
 </asp:Content>
