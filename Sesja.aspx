@@ -1,18 +1,21 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Sesja.aspx.cs" Inherits="Cthulhu_Inz.Sesja" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
-    <head>
+    <header>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Konto.aspx">Powrót</asp:HyperLink>
         <div class="text-center">
             
         <asp:Label ID="Nazwa_postaci" runat="server" Text="Nazwa postaci" Font-Size="X-Large"></asp:Label>
         </div>
-    </head>
+    </header>
 
-</body>
+<body>
     <div class="text-center">
         
     <asp:Label ID="Profesja" runat="server" Text="Profesja" Font-Size="Large"></asp:Label>
+    </div>
+    <div class="text-center">
+        
+    <asp:Label ID="Wiek" runat="server" Text="Wiek" Font-Size="Small"></asp:Label>
     </div>
     <hr />
     <div class="container">
@@ -563,11 +566,47 @@
     <h3 class="text-center">
         UZBROJENIE
     </h3>
+    <h4 class="text-center">
+        Modyfikator Obrażeń
+    </h4>
+    <h4 class="text-center">
+        <asp:Label ID="MOLabel" runat="server" Text="Label"></asp:Label>
+    </h4>
     <div class="text-center">
         <asp:DropDownList ID="Uzbrojenie1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr"></asp:DropDownList>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CthulhuDBConnectionString %>" SelectCommand="SELECT [Nazwa_uzbr] FROM [Uzbrojenie]"></asp:SqlDataSource>
-        <asp:Label ID="Uzbrojenie1Label" runat="server" Text=""></asp:Label>
     </div>
+    <div class="text-center">
+        <h4>Umiejętność Obrażenia Zasięg Liczba użyć na rundę Pociski/Magazynek Koszt Zawodność</h4>
+        </div>
+    <div class="text-center">
+        <asp:Label ID="Uzbrojenie1Label" runat="server" Text=""></asp:Label>
+        </div>
+    <br />
+    <div class="text-center">
+        <asp:DropDownList ID="Uzbrojenie2" runat="server" DataSourceID="SqlDataSource1" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr"></asp:DropDownList>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:CthulhuDBConnectionString %>" SelectCommand="SELECT [Nazwa_uzbr] FROM [Uzbrojenie]"></asp:SqlDataSource>
+    </div>
+    <div class="text-center">
+        <asp:Label ID="Uzbrojenie2Label" runat="server" Text=""></asp:Label>
+        </div>
+    <br />
+    <div class="text-center">
+        <asp:DropDownList ID="Uzbrojenie3" runat="server" DataSourceID="SqlDataSource1" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr"></asp:DropDownList>
+        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:CthulhuDBConnectionString %>" SelectCommand="SELECT [Nazwa_uzbr] FROM [Uzbrojenie]"></asp:SqlDataSource>
+    </div>
+    <div class="text-center">
+        <asp:Label ID="Uzbrojenie3Label" runat="server" Text=""></asp:Label>
+        </div>
+    <br />
+    <div class="text-center">
+        <asp:DropDownList ID="Uzbrojenie4" runat="server" DataSourceID="SqlDataSource1" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr"></asp:DropDownList>
+        <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:CthulhuDBConnectionString %>" SelectCommand="SELECT [Nazwa_uzbr] FROM [Uzbrojenie]"></asp:SqlDataSource>
+    </div>
+    <div class="text-center">
+        <asp:Label ID="Uzbrojenie4Label" runat="server" Text=""></asp:Label>
+        </div>
+    <br />
     <br />
     <h3 class="text-center">
         HISTORIA BADACZA
@@ -583,5 +622,8 @@
         <asp:TextBox ID="Ekwipunek" runat="server" Height="185px" Width="820px" TextMode="MultiLine"></asp:TextBox>
     </div>
     <br />
+    <div class="text-center">
+    <asp:Button ID="Edytuj" runat="server" Text="Edytuj" OnClick="Edytuj_Click" />
+        </div>
     </body>
 </asp:Content>

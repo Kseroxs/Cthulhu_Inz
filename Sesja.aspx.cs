@@ -23,7 +23,6 @@ namespace Cthulhu_Inz
                     PrzypiszWartosci();
                 }
 
-            
 
         }
 
@@ -37,6 +36,7 @@ namespace Cthulhu_Inz
             string imie = (string)dataReader["Imię"];
             string nazwisko = (string)dataReader["Nazwisko"];
             Profesja.Text = (string)dataReader["Profesja"];
+            Wiek.Text= "Wiek: "+ Convert.ToString((int)dataReader["Wiek"]);
             Sila.Text = Convert.ToString((int)dataReader["S"]);
             Zrecznosc.Text = Convert.ToString((int)dataReader["ZR"]);
             Moc.Text = Convert.ToString((int)dataReader["MOC"]);
@@ -100,9 +100,96 @@ namespace Cthulhu_Inz
             Slusarstwo.Text = Convert.ToString((int)dataReader["Ślusarstwo"]);
             HistoriaBadacza.Text = (string)dataReader["Historia badacza"];
             Ekwipunek.Text = (string)dataReader["Ekwipunek"];
-            Uzbrojenie1.Text = (string)dataReader["Uzbrojenie1"];
+            MOLabel.Text = (string)dataReader["Modyfikator obrażeń"];
+            string uzbrojenie1 = (string)dataReader["Uzbrojenie1"];
+            Uzbrojenie1.Text = uzbrojenie1;
+            string uzbrojenie2 = (string)dataReader["Uzbrojenie2"];
+            Uzbrojenie2.Text = uzbrojenie2;
+            string uzbrojenie3 = (string)dataReader["Uzbrojenie3"];
+            Uzbrojenie3.Text = uzbrojenie3;
+            string uzbrojenie4 = (string)dataReader["Uzbrojenie4"];
+            Uzbrojenie4.Text = uzbrojenie4;
             myConnection.Close();
+
+            myConnection.Open();
+            string query2 = "Select * from [dbo].Uzbrojenie where Nazwa_uzbr='" + uzbrojenie1 + "'";
+            SqlCommand command2 = new SqlCommand(query2, myConnection);
+            SqlDataReader dataReader2 = command2.ExecuteReader();
+            dataReader2.Read();
+            string umiejetnosc = (string)dataReader2["Umiejetnosc"];
+            string obrazenia = (string)dataReader2["Obrazenia"];
+            string zasieg = (string)dataReader2["Zasieg"];
+            string liczba_uzyc = (string)dataReader2["Liczba_uzyc_runda"];
+            string pociski_magazynek = (string)dataReader2["Pociski_magazynek"];
+            string koszt = (string)dataReader2["Koszt"];
+            string zawodnosc = Convert.ToString((int)dataReader2["Zawodnosc"]);
+            Uzbrojenie1Label.Text = umiejetnosc + " | " + obrazenia + " | "+zasieg+" | "+liczba_uzyc+" | "+pociski_magazynek+" | "+koszt+" | "+zawodnosc;
+            myConnection.Close();
+
+            myConnection.Open();
+            string query3 = "Select * from [dbo].Uzbrojenie where Nazwa_uzbr='" + uzbrojenie2 + "'";
+            SqlCommand command3 = new SqlCommand(query3, myConnection);
+            SqlDataReader dataReader3 = command3.ExecuteReader();
+            dataReader3.Read();
+            string umiejetnosc2 = (string)dataReader3["Umiejetnosc"];
+            string obrazenia2 = (string)dataReader3["Obrazenia"];
+            string zasieg2 = (string)dataReader3["Zasieg"];
+            string liczba_uzyc2 = (string)dataReader3["Liczba_uzyc_runda"];
+            string pociski_magazynek2 = (string)dataReader3["Pociski_magazynek"];
+            string koszt2 = (string)dataReader3["Koszt"];
+            string zawodnosc2 = Convert.ToString((int)dataReader3["Zawodnosc"]);
+            Uzbrojenie2Label.Text = umiejetnosc2 + " | " + obrazenia2 + " | " + zasieg2 + " | " + liczba_uzyc2 + " | " + pociski_magazynek2 + " | " + koszt2 + " | " + zawodnosc2;
+            myConnection.Close();
+
+            myConnection.Open();
+            string query4 = "Select * from [dbo].Uzbrojenie where Nazwa_uzbr='" + uzbrojenie3 + "'";
+            SqlCommand command4 = new SqlCommand(query4, myConnection);
+            SqlDataReader dataReader4 = command4.ExecuteReader();
+            dataReader4.Read();
+            string umiejetnosc3 = (string)dataReader4["Umiejetnosc"];
+            string obrazenia3 = (string)dataReader4["Obrazenia"];
+            string zasieg3 = (string)dataReader4["Zasieg"];
+            string liczba_uzyc3 = (string)dataReader4["Liczba_uzyc_runda"];
+            string pociski_magazynek3 = (string)dataReader4["Pociski_magazynek"];
+            string koszt3 = (string)dataReader4["Koszt"];
+            string zawodnosc3 = Convert.ToString((int)dataReader4["Zawodnosc"]);
+            Uzbrojenie3Label.Text = umiejetnosc3 + " | " + obrazenia3 + " | " + zasieg3 + " | " + liczba_uzyc3 + " | " + pociski_magazynek3 + " | " + koszt3 + " | " + zawodnosc3;
+            myConnection.Close();
+
+            myConnection.Open();
+            string query5 = "Select * from [dbo].Uzbrojenie where Nazwa_uzbr='" + uzbrojenie2 + "'";
+            SqlCommand command5 = new SqlCommand(query5, myConnection);
+            SqlDataReader dataReader5 = command5.ExecuteReader();
+            dataReader5.Read();
+            string umiejetnosc4 = (string)dataReader5["Umiejetnosc"];
+            string obrazenia4 = (string)dataReader5["Obrazenia"];
+            string zasieg4 = (string)dataReader5["Zasieg"];
+            string liczba_uzyc4 = (string)dataReader5["Liczba_uzyc_runda"];
+            string pociski_magazynek4 = (string)dataReader5["Pociski_magazynek"];
+            string koszt4 = (string)dataReader5["Koszt"];
+            string zawodnosc4 = Convert.ToString((int)dataReader5["Zawodnosc"]);
+            Uzbrojenie4Label.Text = umiejetnosc4 + " | " + obrazenia4 + " | " + zasieg4 + " | " + liczba_uzyc4 + " | " + pociski_magazynek4 + " | " + koszt4 + " | " + zawodnosc4;
+            myConnection.Close();
+
+
         }
 
+        protected void Edytuj_Click(object sender, EventArgs e)
+        {
+            EdytujWartosci();
+        }
+
+        private void EdytujWartosci()
+        {
+            //DOKOŃCZYĆ
+            myConnection.Open();
+            string query = "UPDATE Postac " +
+                "SET Poczytalność ='"+PktPoczytalnosci.Text+ " , [Punkty Magii] ='" + PktMagii.Text + ",  Szczęście ='" + Szczescie.Text + ",[Punkty Wytrzymałości] ='" + PktWytrzymalosci.Text + ", Antropologia ='" + Antropologia.Text + "," +
+                "Księgowość ='" + Ksiegowosc.Text + ",Pilotowanie ='" + Pilotowanie.Text + "," +
+                "WHERE IDPostaci='" + postacid + "';";
+            SqlCommand update = new SqlCommand(query, myConnection);
+            update.ExecuteNonQuery();
+            myConnection.Close();
+        }
     }
 }

@@ -16,7 +16,7 @@
                 Profesja 
             <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="Profesja" DataTextField="Nazwa_Profesji" DataValueField="Nazwa_Profesji" AppendDataBoundItems="true">
                 <asp:ListItem Selected="True">--Wybierz profesję--</asp:ListItem>
-            </asp:DropDownList>Mie
+            </asp:DropDownList>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="DropDownList1" InitialValue="--Wybierz profesję--" ErrorMessage="Musisz najpierw wybrać profesję" ForeColor="Red">
                     </asp:RequiredFieldValidator>
                 <asp:SqlDataSource ID="Profesja" runat="server" ConnectionString="<%$ ConnectionStrings:CthulhuDBConnectionString %>" SelectCommand="SELECT [Nazwa_Profesji] FROM [Profesja]"></asp:SqlDataSource>
@@ -144,18 +144,14 @@
 
             <div class="text-center">
             <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="Uzbrojenie" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr" AppendDataBoundItems="true">
-                <asp:ListItem Selected="True">Brak</asp:ListItem>
                 </asp:DropDownList>
                 <asp:DropDownList ID="DropDownList3" runat="server" DataSourceID="Uzbrojenie" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr"  AppendDataBoundItems="true">
-                <asp:ListItem Selected="True">Brak</asp:ListItem>
                 </asp:DropDownList>
                 <asp:DropDownList ID="DropDownList4" runat="server" DataSourceID="Uzbrojenie" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr"  AppendDataBoundItems="true">
-                <asp:ListItem Selected="True">Brak</asp:ListItem>
                 </asp:DropDownList>
                 <asp:DropDownList ID="DropDownList5" runat="server" DataSourceID="Uzbrojenie" DataTextField="Nazwa_uzbr" DataValueField="Nazwa_uzbr"  AppendDataBoundItems="true">
-                <asp:ListItem Selected="True">Brak</asp:ListItem>
                 </asp:DropDownList>
-                <asp:SqlDataSource ID="Uzbrojenie" runat="server" ConnectionString="<%$ ConnectionStrings:CthulhuDBConnectionString %>" SelectCommand="SELECT [Nazwa_uzbr] FROM [Uzbrojenie]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="Uzbrojenie" runat="server" ConnectionString="<%$ ConnectionStrings:CthulhuDBConnectionString %>" SelectCommand="SELECT [Nazwa_uzbr] FROM [Uzbrojenie] ORDER BY [IDUzbrojenia]"></asp:SqlDataSource>
                 </div>
             <h2 class="text-center">HISTORIA BADACZA</h2>
             <h4 class="text-center">Opisz swoją postać</h4>

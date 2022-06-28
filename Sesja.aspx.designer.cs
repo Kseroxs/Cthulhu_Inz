@@ -42,6 +42,15 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.Label Profesja;
 
         /// <summary>
+        /// Kontrolka Wiek.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Wiek;
+
+        /// <summary>
         /// Kontrolka Sila.
         /// </summary>
         /// <remarks>
@@ -969,6 +978,15 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Slusarstwo;
 
         /// <summary>
+        /// Kontrolka MOLabel.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label MOLabel;
+
+        /// <summary>
         /// Kontrolka Uzbrojenie1.
         /// </summary>
         /// <remarks>
@@ -996,6 +1014,87 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.Label Uzbrojenie1Label;
 
         /// <summary>
+        /// Kontrolka Uzbrojenie2.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Uzbrojenie2;
+
+        /// <summary>
+        /// Kontrolka SqlDataSource2.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
+
+        /// <summary>
+        /// Kontrolka Uzbrojenie2Label.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Uzbrojenie2Label;
+
+        /// <summary>
+        /// Kontrolka Uzbrojenie3.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Uzbrojenie3;
+
+        /// <summary>
+        /// Kontrolka SqlDataSource3.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource3;
+
+        /// <summary>
+        /// Kontrolka Uzbrojenie3Label.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Uzbrojenie3Label;
+
+        /// <summary>
+        /// Kontrolka Uzbrojenie4.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Uzbrojenie4;
+
+        /// <summary>
+        /// Kontrolka SqlDataSource4.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource4;
+
+        /// <summary>
+        /// Kontrolka Uzbrojenie4Label.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Uzbrojenie4Label;
+
+        /// <summary>
         /// Kontrolka HistoriaBadacza.
         /// </summary>
         /// <remarks>
@@ -1012,5 +1111,14 @@ namespace Cthulhu_Inz
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Ekwipunek;
+
+        /// <summary>
+        /// Kontrolka Edytuj.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Edytuj;
     }
 }
