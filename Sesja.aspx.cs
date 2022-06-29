@@ -13,7 +13,6 @@ namespace Cthulhu_Inz
     {
         SqlConnection myConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["CthulhuDBConnectionString"].ConnectionString);
         string postacid;
-        string postacid2;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -24,7 +23,7 @@ namespace Cthulhu_Inz
                 PrzypiszWartosci();
             }
         }
-
+        //przypisanie wszystkich wartości postaci
         private void PrzypiszWartosci()
         {
             myConnection.Open();
@@ -172,13 +171,13 @@ namespace Cthulhu_Inz
 
 
         }
-
+        //przycisk kończący edycje
         protected void Edytuj_Click(object sender, EventArgs e)
         {
             EdytujWartosci();
             ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Postać została edytowana!');window.location ='Konto.aspx';", true);
         }
-
+        //edytowanie wartości postaci w bazie
         private void EdytujWartosci()
         {
             //DOKOŃCZYĆ

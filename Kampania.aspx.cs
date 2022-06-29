@@ -21,7 +21,7 @@ namespace Cthulhu_Inz
             GridView1.DataBind();
 
         }
-
+        //otwieranie kontrolek do tworzenia kampanii
         protected void Stworz_kampanie_Click(object sender, EventArgs e)
         {
             Label1.Visible = true;
@@ -31,7 +31,7 @@ namespace Cthulhu_Inz
             Dodaj_kampanie.Visible = true;
             
         }
-
+        //dodawanie kampanii do bazy
         protected void Dodaj_kampanie_Click(object sender, EventArgs e)
         {
             myConnection.Open();
@@ -45,6 +45,7 @@ namespace Cthulhu_Inz
             ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Udało się stworzyć kampanię "+ Nazwa_kampanii +"');window.location ='Kampania.aspx';", true);
 
         }
+        //lista kampanii użytkownika
         public List<Kampanie> ListaKampaniiUzytkownika()
         {
             using (SqlCommand cmd = new SqlCommand("SELECT IDKampanii,Nazwa,Straznik FROM Kampania where Straznik= '" + User.Identity.Name + "'", myConnection))
@@ -70,6 +71,7 @@ namespace Cthulhu_Inz
             }
 
         }
+        //lista kampanii, w których biorą udział postacie użytkownika
         public List<Kampanie> ListaKampanii()
         {
             using (SqlCommand cmd = new SqlCommand("SELECT Postac.Imię,Postac.IDPostaci, Uzytkownicy.IDUzytkownika,Postac.IDUzytkownika,Uzytkownicy.[Login], Kampania.IDKampanii,Nazwa,Straznik FROM Kampania" +

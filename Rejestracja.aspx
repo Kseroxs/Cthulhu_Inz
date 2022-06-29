@@ -1,27 +1,30 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Rejestracja.aspx.cs" Inherits="Cthulhu_Inz.Rejestracja" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <html>
-        <body>
+        <body class="text-center">
             <h1>Rejestracja</h1>
          <p>
             <asp:Literal runat="server" ID="StatusMessage" />
         </p>   
-    <h2>Login: 
-        <asp:TextBox ID="login" runat="server" ></asp:TextBox>
+        <asp:TextBox ID="login" runat="server" placeholder="Login"></asp:TextBox>
+            <br />
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="login" ErrorMessage="Login nie może być pusty" Font-Size="Small" ForeColor="#FF3300"></asp:RequiredFieldValidator>
-        </h2>
-        <h2>Email: 
-            <asp:TextBox ID="email" runat="server"></asp:TextBox>
+            <br />
+        <div>
+            <asp:TextBox ID="email" runat="server" placeholder="E-mail"></asp:TextBox>
+        </div>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="email" ErrorMessage="Email niepoprawny" Font-Size="Small" ForeColor="#FF3300"></asp:RequiredFieldValidator>
-        </h2>
-    <h2>Hasło: 
-        <asp:TextBox ID="haslo" runat="server" type="password"></asp:TextBox>
+            <br />
+    <div>
+        <asp:TextBox ID="haslo" runat="server" type="password" placeholder="Hasło"></asp:TextBox>
+
+        </div>
 
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="haslo" ErrorMessage="Hasło nie może być puste" Font-Size="Small" ForeColor="#FF3300"></asp:RequiredFieldValidator>
 
-        </h2>
+            <br />
             <p>
-        <asp:Label ID="InvalidCredentialsMessage" runat="server" ForeColor="Red" Text="Podany login jest zajęty."
+        <asp:Label ID="InvalidCredentialsMessage" runat="server" ForeColor="Red" Text="Podany login jest już zajęty."
             Visible="False"></asp:Label> </p>
             <asp:Button ID="Zarejestruj" runat="server" Text="Zarejestruj" Width="144px" OnClick="Zarejestruj_Click" />
 

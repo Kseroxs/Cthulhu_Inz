@@ -577,7 +577,7 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CthulhuDBConnectionString %>" SelectCommand="SELECT [Nazwa_uzbr] FROM [Uzbrojenie]"></asp:SqlDataSource>
     </div>
     <div class="text-center">
-        <h4>Umiejętność Obrażenia Zasięg Liczba użyć na rundę Pociski/Magazynek Koszt Zawodność</h4>
+        <h4>Umiejętność | Obrażenia | Zasięg | Liczba użyć na rundę | Pociski/Magazynek | Koszt | Zawodność</h4>
         </div>
     <div class="text-center">
         <asp:Label ID="Uzbrojenie1Label" runat="server" Text=""></asp:Label>
