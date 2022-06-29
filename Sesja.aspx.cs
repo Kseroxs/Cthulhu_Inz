@@ -13,17 +13,16 @@ namespace Cthulhu_Inz
     {
         SqlConnection myConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["CthulhuDBConnectionString"].ConnectionString);
         string postacid;
+        string postacid2;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            
-                if (!IsPostBack)
+
+            postacid = Page.Request.QueryString["IDPostaci"].ToString();
+            if (!IsPostBack)
                 {
-                     postacid = Page.Request.QueryString["IDPostaci"].ToString();
-                    PrzypiszWartosci();
-                }
-
-
+                     
+                PrzypiszWartosci();
+            }
         }
 
         private void PrzypiszWartosci()
@@ -177,6 +176,7 @@ namespace Cthulhu_Inz
         protected void Edytuj_Click(object sender, EventArgs e)
         {
             EdytujWartosci();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Postać została edytowana!');window.location ='Konto.aspx';", true);
         }
 
         private void EdytujWartosci()
@@ -184,8 +184,16 @@ namespace Cthulhu_Inz
             //DOKOŃCZYĆ
             myConnection.Open();
             string query = "UPDATE Postac " +
-                "SET Poczytalność ='"+PktPoczytalnosci.Text+ " , [Punkty Magii] ='" + PktMagii.Text + ",  Szczęście ='" + Szczescie.Text + ",[Punkty Wytrzymałości] ='" + PktWytrzymalosci.Text + ", Antropologia ='" + Antropologia.Text + "," +
-                "Księgowość ='" + Ksiegowosc.Text + ",Pilotowanie ='" + Pilotowanie.Text + "," +
+                "SET Poczytalność ='" + PktPoczytalnosci.Text + "' , [Punkty Magii] ='" + PktMagii.Text + "', Szczęście ='" + Szczescie.Text + "',[Punkty Wytrzymałości] ='" + PktWytrzymalosci.Text + "', Antropologia ='" + Antropologia.Text + "'," +
+                "Księgowość ='" + Ksiegowosc.Text + "',Pilotowanie ='" + Pilotowanie.Text + "',Tropienie='" + Tropienie.Text + "', Archeologia='" + Archeologia.Text + "', Majętność='" + Majetnosc.Text + "', Pływanie='" + Plywanie.Text + "', Ukrywanie='" + Ukrywanie.Text + "'," +
+                "[Broń palna długa]='" + BronPalnaDluga.Text + "', Mechanika='" + Mechanika.Text + "',Prawo='" + Prawo.Text + "',Unik='" + Unik.Text + "',[Broń palna krótka]='" + BronPalnaKrotka.Text + "',Medycyna='" + Medycyna.Text + "'," +
+                "[Prowadzenie samochodu]='" + ProwadzenieSamochodu.Text + "',[Urok osobisty]='" + UrokOsobisty.Text + "',Charakteryzacja='" + Charakteryzacja.Text + "',[Mity Cthulhu]='" + MityCthulhu.Text + "',Psychoanaliza='" + Psychoanaliza.Text + "'," +
+                "[Walka wręcz/Bijatyka]='" + WalkaWrecz.Text + "',Elektryka='" + Elektryka.Text + "',Nasłuchiwanie='" + Nasluchiwanie.Text + "',Psychologia='" + Psychologia.Text + "',[Wiedza o naturze]='" + WiedzaONaturze.Text + "',Gadanina='" + Gadanina.Text + "'," +
+                "Nauka='" + Nauka.Text + "',Rzucanie='" + Rzucanie.Text + "',Wspinaczka='" + Wspinaczka.Text + "',Historia='" + Historia.Text + "',Nawigacja='" + Nawigacja.Text + "',Skakanie='" + Skakanie.Text + "',Wycena='" + Wycena.Text + "'," +
+                "Jeździectwo='" + Jezdziectwo.Text + "',[Obsługa ciężkiego sprzętu]='" + ObslugaCiezkiegoSprzetu.Text + "',Spostrzegawczość='" + Spostrzegawczosc.Text + "',Zastraszanie='" + Zastraszanie.Text + "',[Język obcy]='" + JezykObcy.Text + "'," +
+                "Okultyzm='" + Okultyzm.Text + "',[Sztuka/Rzemiosło]='" + SztukaRzemioslo.Text + "',[Zręczne palce]='" + ZrecznePalce.Text + "',[Język ojczysty]='" + JezykOjczysty.Text + "',Perswazja='" + Perswazja.Text + "',[Sztuka przetrwania]='" + SztukaPrzetrwania.Text + "'," +
+                "[Korzystanie z bibliotek]='" + KorzystanieZBibliotek.Text + "',[Pierwsza pomoc]='" + PierwszaPomoc.Text + "',Ślusarstwo='" + Slusarstwo.Text + "',Uzbrojenie1='" + Uzbrojenie1.Text + "',Uzbrojenie2='" + Uzbrojenie2.Text + "'," +
+                "Uzbrojenie3='" + Uzbrojenie3.Text + "',Uzbrojenie4='" + Uzbrojenie4.Text + "',[Historia badacza]='" + HistoriaBadacza.Text + "',Ekwipunek='" + Ekwipunek.Text + "'"+
                 "WHERE IDPostaci='" + postacid + "';";
             SqlCommand update = new SqlCommand(query, myConnection);
             update.ExecuteNonQuery();
