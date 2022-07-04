@@ -120,7 +120,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Sila;
+        protected global::System.Web.UI.WebControls.Label Sila;
 
         /// <summary>
         /// Kontrolka Zrecznosc.
@@ -129,7 +129,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Zrecznosc;
+        protected global::System.Web.UI.WebControls.Label Zrecznosc;
 
         /// <summary>
         /// Kontrolka Moc.
@@ -138,7 +138,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Moc;
+        protected global::System.Web.UI.WebControls.Label Moc;
 
         /// <summary>
         /// Kontrolka Kondycja.
@@ -147,7 +147,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Kondycja;
+        protected global::System.Web.UI.WebControls.Label Kondycja;
 
         /// <summary>
         /// Kontrolka Wyglad.
@@ -156,7 +156,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Wyglad;
+        protected global::System.Web.UI.WebControls.Label Wyglad;
 
         /// <summary>
         /// Kontrolka Wyksztalcenie.
@@ -165,7 +165,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Wyksztalcenie;
+        protected global::System.Web.UI.WebControls.Label Wyksztalcenie;
 
         /// <summary>
         /// Kontrolka Budowa_Ciala.
@@ -174,7 +174,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Budowa_Ciala;
+        protected global::System.Web.UI.WebControls.Label Budowa_Ciala;
 
         /// <summary>
         /// Kontrolka Inteligencja.
@@ -183,7 +183,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Inteligencja;
+        protected global::System.Web.UI.WebControls.Label Inteligencja;
 
         /// <summary>
         /// Kontrolka Ruch.
@@ -192,7 +192,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Ruch;
+        protected global::System.Web.UI.WebControls.Label Ruch;
 
         /// <summary>
         /// Kontrolka Pkt_poczytalnosci.
@@ -201,7 +201,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Pkt_poczytalnosci;
+        protected global::System.Web.UI.WebControls.Label Pkt_poczytalnosci;
 
         /// <summary>
         /// Kontrolka Pkt_magii.
@@ -210,7 +210,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Pkt_magii;
+        protected global::System.Web.UI.WebControls.Label Pkt_magii;
 
         /// <summary>
         /// Kontrolka Szczescie.
@@ -219,7 +219,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Szczescie;
+        protected global::System.Web.UI.WebControls.Label Szczescie;
 
         /// <summary>
         /// Kontrolka Pkt_wytrzymalosci.
@@ -228,7 +228,7 @@ namespace Cthulhu_Inz
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Pkt_wytrzymalosci;
+        protected global::System.Web.UI.WebControls.Label Pkt_wytrzymalosci;
 
         /// <summary>
         /// Kontrolka Pula_pkt.
@@ -276,22 +276,22 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Ksiegowosc;
 
         /// <summary>
-        /// Kontrolka Plywanie.
+        /// Kontrolka Pilotowanie.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Plywanie;
+        protected global::System.Web.UI.WebControls.TextBox Pilotowanie;
 
         /// <summary>
-        /// Kontrolka Unik.
+        /// Kontrolka Tropienie.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Unik;
+        protected global::System.Web.UI.WebControls.TextBox Tropienie;
 
         /// <summary>
         /// Kontrolka Archeologia.
@@ -312,22 +312,22 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Majetnosc;
 
         /// <summary>
-        /// Kontrolka Prawo.
+        /// Kontrolka Plywanie.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Prawo;
+        protected global::System.Web.UI.WebControls.TextBox Plywanie;
 
         /// <summary>
-        /// Kontrolka Urok_osobisty.
+        /// Kontrolka Ukrywanie.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Urok_osobisty;
+        protected global::System.Web.UI.WebControls.TextBox Ukrywanie;
 
         /// <summary>
         /// Kontrolka Bron_palna_dluga.
@@ -348,40 +348,22 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Mechanika;
 
         /// <summary>
-        /// Kontrolka Prowadzenie_Samochodu.
+        /// Kontrolka Prawo.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Prowadzenie_Samochodu;
+        protected global::System.Web.UI.WebControls.TextBox Prawo;
 
         /// <summary>
-        /// Kontrolka Walka_wrecz.
+        /// Kontrolka Unik.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Walka_wrecz;
-
-        /// <summary>
-        /// Kontrolka Medycyna.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Medycyna;
-
-        /// <summary>
-        /// Kontrolka Psychoanaliza.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Psychoanaliza;
+        protected global::System.Web.UI.WebControls.TextBox Unik;
 
         /// <summary>
         /// Kontrolka Bron_palna_krotka.
@@ -393,22 +375,31 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Bron_palna_krotka;
 
         /// <summary>
-        /// Kontrolka Mity_cthulhu.
+        /// Kontrolka Medycyna.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Mity_cthulhu;
+        protected global::System.Web.UI.WebControls.TextBox Medycyna;
 
         /// <summary>
-        /// Kontrolka Psychologia.
+        /// Kontrolka Prowadzenie_Samochodu.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Psychologia;
+        protected global::System.Web.UI.WebControls.TextBox Prowadzenie_Samochodu;
+
+        /// <summary>
+        /// Kontrolka Urok_osobisty.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Urok_osobisty;
 
         /// <summary>
         /// Kontrolka Charakteryzacja.
@@ -420,31 +411,31 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Charakteryzacja;
 
         /// <summary>
-        /// Kontrolka Nasłuchiwanie.
+        /// Kontrolka Mity_cthulhu.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Nasłuchiwanie;
+        protected global::System.Web.UI.WebControls.TextBox Mity_cthulhu;
 
         /// <summary>
-        /// Kontrolka Rzucanie.
+        /// Kontrolka Psychoanaliza.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Rzucanie;
+        protected global::System.Web.UI.WebControls.TextBox Psychoanaliza;
 
         /// <summary>
-        /// Kontrolka Wiedza_o_naturze.
+        /// Kontrolka Walka_wrecz.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Wiedza_o_naturze;
+        protected global::System.Web.UI.WebControls.TextBox Walka_wrecz;
 
         /// <summary>
         /// Kontrolka Elektryka.
@@ -456,31 +447,31 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Elektryka;
 
         /// <summary>
-        /// Kontrolka Nauka.
+        /// Kontrolka Nasluchiwanie.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Nauka;
+        protected global::System.Web.UI.WebControls.TextBox Nasluchiwanie;
 
         /// <summary>
-        /// Kontrolka Skakanie.
+        /// Kontrolka Psychologia.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Skakanie;
+        protected global::System.Web.UI.WebControls.TextBox Psychologia;
 
         /// <summary>
-        /// Kontrolka Wspinaczka.
+        /// Kontrolka Wiedza_o_naturze.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Wspinaczka;
+        protected global::System.Web.UI.WebControls.TextBox Wiedza_o_naturze;
 
         /// <summary>
         /// Kontrolka Gadanina.
@@ -492,22 +483,31 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Gadanina;
 
         /// <summary>
-        /// Kontrolka Spostrzegawczosc.
+        /// Kontrolka Nauka.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Spostrzegawczosc;
+        protected global::System.Web.UI.WebControls.TextBox Nauka;
 
         /// <summary>
-        /// Kontrolka Wycena.
+        /// Kontrolka Rzucanie.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Wycena;
+        protected global::System.Web.UI.WebControls.TextBox Rzucanie;
+
+        /// <summary>
+        /// Kontrolka Wspinaczka.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Wspinaczka;
 
         /// <summary>
         /// Kontrolka Historia.
@@ -519,22 +519,31 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Historia;
 
         /// <summary>
-        /// Kontrolka Sztuka_rzemioslo.
+        /// Kontrolka Nawigacja.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Sztuka_rzemioslo;
+        protected global::System.Web.UI.WebControls.TextBox Nawigacja;
 
         /// <summary>
-        /// Kontrolka Zastraszanie.
+        /// Kontrolka Skakanie.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Zastraszanie;
+        protected global::System.Web.UI.WebControls.TextBox Skakanie;
+
+        /// <summary>
+        /// Kontrolka Wycena.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Wycena;
 
         /// <summary>
         /// Kontrolka Jezdziectwo.
@@ -546,22 +555,31 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Jezdziectwo;
 
         /// <summary>
-        /// Kontrolka Nawigacja.
+        /// Kontrolka Obsluga_ciezkiego_sprzetu.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Nawigacja;
+        protected global::System.Web.UI.WebControls.TextBox Obsluga_ciezkiego_sprzetu;
 
         /// <summary>
-        /// Kontrolka Zreczne_palce.
+        /// Kontrolka Spostrzegawczosc.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Zreczne_palce;
+        protected global::System.Web.UI.WebControls.TextBox Spostrzegawczosc;
+
+        /// <summary>
+        /// Kontrolka Zastraszanie.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Zastraszanie;
 
         /// <summary>
         /// Kontrolka Jezyk_obcy.
@@ -573,15 +591,6 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Jezyk_obcy;
 
         /// <summary>
-        /// Kontrolka Obsluga_ciezkiego_sprzetu.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Obsluga_ciezkiego_sprzetu;
-
-        /// <summary>
         /// Kontrolka Okultyzm.
         /// </summary>
         /// <remarks>
@@ -591,31 +600,22 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Okultyzm;
 
         /// <summary>
-        /// Kontrolka Sztuka_przetrwania.
+        /// Kontrolka Sztuka_rzemioslo.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Sztuka_przetrwania;
+        protected global::System.Web.UI.WebControls.TextBox Sztuka_rzemioslo;
 
         /// <summary>
-        /// Kontrolka Perswazja.
+        /// Kontrolka Zreczne_palce.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Perswazja;
-
-        /// <summary>
-        /// Kontrolka Slusarstwo.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Slusarstwo;
+        protected global::System.Web.UI.WebControls.TextBox Zreczne_palce;
 
         /// <summary>
         /// Kontrolka Jezyk_ojczysty.
@@ -627,22 +627,22 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Jezyk_ojczysty;
 
         /// <summary>
-        /// Kontrolka Pierwsza_pomoc.
+        /// Kontrolka Perswazja.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Pierwsza_pomoc;
+        protected global::System.Web.UI.WebControls.TextBox Perswazja;
 
         /// <summary>
-        /// Kontrolka Tropienie.
+        /// Kontrolka Sztuka_przetrwania.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Tropienie;
+        protected global::System.Web.UI.WebControls.TextBox Sztuka_przetrwania;
 
         /// <summary>
         /// Kontrolka Korzystanie_z_bibliotek.
@@ -654,22 +654,22 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox Korzystanie_z_bibliotek;
 
         /// <summary>
-        /// Kontrolka Pilotowanie.
+        /// Kontrolka Pierwsza_pomoc.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Pilotowanie;
+        protected global::System.Web.UI.WebControls.TextBox Pierwsza_pomoc;
 
         /// <summary>
-        /// Kontrolka Ukrywanie.
+        /// Kontrolka Slusarstwo.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Ukrywanie;
+        protected global::System.Web.UI.WebControls.TextBox Slusarstwo;
 
         /// <summary>
         /// Kontrolka DropDownList2.

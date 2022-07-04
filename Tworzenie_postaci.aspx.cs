@@ -503,7 +503,7 @@ namespace Cthulhu_Inz
             insertCommand.Parameters.AddWithValue("@Mechanika", Mechanika.Text);
             insertCommand.Parameters.AddWithValue("@Medycyna", Medycyna.Text);
             insertCommand.Parameters.AddWithValue("@Mity_Cthulhu", Mity_cthulhu.Text);
-            insertCommand.Parameters.AddWithValue("@Nasłuchiwanie", Nasłuchiwanie.Text);
+            insertCommand.Parameters.AddWithValue("@Nasłuchiwanie", Nasluchiwanie.Text);
             insertCommand.Parameters.AddWithValue("@Nauka", Nauka.Text);
             insertCommand.Parameters.AddWithValue("@Nawigacja", Nawigacja.Text);
             insertCommand.Parameters.AddWithValue("@Obsługa_ciężkiego_sprzętu", Obsluga_ciezkiego_sprzetu.Text);

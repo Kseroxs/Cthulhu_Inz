@@ -37,29 +37,115 @@
             <h2 class="text-center">
                 <asp:ImageButton ID="Rzut_na_cechy" runat="server" OnClick="Roll_cechy" Height="62px" ImageUrl="~/Content/kostka.png" Width="68px" />
                 </h2>
-            <div class="text-center">
-                    Siła(S) <asp:TextBox ID="Sila" runat="server" Height="18px" Width="27px" ReadOnly="True"></asp:TextBox>
-                    Zręczność(ZR) <asp:TextBox ID="Zrecznosc" runat="server" Height="18px" Width="27px" ReadOnly="True"></asp:TextBox>
-                MOC <asp:TextBox ID="Moc" runat="server" Height="18px" Width="27px" ReadOnly="True"></asp:TextBox>
-
+            <div class="container">
+                <div class="row justify-content-md-center">
+            
+            <div class="col col-lg-2">
+            Siła
             </div>
-            <div class="text-center">
-                Kondycja(KON) <asp:TextBox ID="Kondycja" runat="server" Height="18px" Width="27px" ReadOnly="True"></asp:TextBox>
-                Wygląd(WYG) <asp:TextBox ID="Wyglad" runat="server" Height="18px" Width="27px" ReadOnly="True"></asp:TextBox>
-                Wykształcenie(WYK) <asp:TextBox ID="Wyksztalcenie" runat="server" Height="18px" Width="27px" ReadOnly="True"></asp:TextBox>
-                </div>
-            <div class="text-center">
-                Budowa Ciała(BC) <asp:TextBox ID="Budowa_Ciala" runat="server" Height="18px" Width="27px" ReadOnly="True"></asp:TextBox>
-                Inteligencja(INT) <asp:TextBox ID="Inteligencja" runat="server" Height="18px" Width="27px" ReadOnly="True"></asp:TextBox>
-                Ruch <asp:TextBox ID="Ruch" runat="server" Height="18px" Width="27px" ReadOnly="True"></asp:TextBox>
+            <div class="col col-lg-2">
+            Zręczność
+            </div>
+            <div class="col col-lg-2">
+            MOC
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:Label ID="Sila" runat="server" Text="0"></asp:Label>
+            </div>
+            <div class="col col-lg-2">
+                <asp:Label ID="Zrecznosc" runat="server" Text="0"></asp:Label>
+            </div>
+            <div class="col col-lg-2">
+                <asp:Label ID="Moc" runat="server" Text="0"></asp:Label>
+            </div>
+        </div>
+
+            <br />
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+            Kondycja
+            </div>
+            <div class="col col-lg-2">
+            Wygląd
+            </div>
+            <div class="col col-lg-2">
+            Wykształcenie
+            </div>
+            </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:Label ID="Kondycja" runat="server" Text="0"></asp:Label>
+            </div>
+            <div class="col col-lg-2">
+                <asp:Label ID="Wyglad" runat="server" Text="0"></asp:Label>
+            </div>
+            <div class="col col-lg-2">
+                <asp:Label ID="Wyksztalcenie" runat="server" Text="0"></asp:Label>
+            </div>
+        </div>
+        
+        <br />
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+            Budowa Ciała
+            </div>
+            <div class="col col-lg-2">
+            Inteligencja
+            </div>
+            <div class="col col-lg-2">
+            Ruch
+            </div>
+            </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:Label ID="Budowa_Ciala" runat="server" Text="0"></asp:Label>
+            </div>
+            <div class="col col-lg-2">
+                <asp:Label ID="Inteligencja" runat="server" Text="0"></asp:Label>
+            </div>
+            <div class="col col-lg-2">
+                <asp:Label ID="Ruch" runat="server" Text="0"></asp:Label>
+            </div>
+        </div>
                 </div>
             <h2 class="text-center">CECHY POCHODNE</h2>
-            <div class="text-center">
-                Punkty poczytalności <asp:TextBox ID="Pkt_poczytalnosci" runat="server" Height="18px" Width="27px"></asp:TextBox>
-                Punkty Magii <asp:TextBox ID="Pkt_magii" runat="server" Height="18px" Width="27px"></asp:TextBox>
-                Szczęście <asp:TextBox ID="Szczescie" runat="server" Height="18px" Width="27px"></asp:TextBox>
-                Punkty Wytrzymałości <asp:TextBox ID="Pkt_wytrzymalosci" runat="server" Height="18px" Width="27px"></asp:TextBox>
-                </div>
+             <div class="container">
+                <div class="row justify-content-md-center">
+            
+            <div class="col col-lg-2">
+            Punkty Poczytalności
+            </div>
+            <div class="col col-lg-2">
+            Punkty Magii
+            </div>
+            <div class="col col-lg-2">
+            Szczęście
+            </div>
+                    <div class="col col-lg-2">
+            Punkty Wytrzymałości
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:Label ID="Pkt_poczytalnosci" runat="server" Text="0"></asp:Label>
+            </div>
+            <div class="col col-lg-2">
+                <asp:Label ID="Pkt_magii" runat="server" Text="0"></asp:Label>
+            </div>
+            <div class="col col-lg-2">
+                <asp:Label ID="Szczescie" runat="server" Text="0"></asp:Label>
+            </div>
+            <div class="col col-lg-2">
+                <asp:Label ID="Pkt_wytrzymalosci" runat="server" Text="0"></asp:Label>
+            </div>
+        </div>
+                 </div>
             <h2 class="text-center">UMIEJĘTNOŚCI</h2>
             <div class="text-center"
             <asp:Label ID="Pula_pkt" runat="server" Text="Label" Visible="False" ></asp:Label>
@@ -70,76 +156,396 @@
             <div class="text-center"
             <asp:Label ID="Umiejetnosci_zainteresowania" runat="server" Text="Label" Visible="False" ></asp:Label>
                 </div>
-            <div class="text-center">
-                Antropologia <asp:TextBox ID="Antropologia" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Księgowość <asp:TextBox ID="Ksiegowosc" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Pływanie <asp:TextBox ID="Plywanie" runat="server" Height="18px" Width="27px">20</asp:TextBox>
-                Unik <asp:TextBox ID="Unik" runat="server" Height="18px" Width="27px" ReadOnly="true"></asp:TextBox>
+            <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Antropologia
             </div>
-            <div class="text-center">
-                Archeologia <asp:TextBox ID="Archeologia" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Majętność <asp:TextBox ID="Majetnosc" runat="server" Height="18px" Width="27px">0</asp:TextBox>
-                Prawo <asp:TextBox ID="Prawo" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Urok Osobisty <asp:TextBox ID="Urok_osobisty" runat="server" Height="18px" Width="27px">15</asp:TextBox>
+            <div class="col col-lg-2">
+            Księgowość
             </div>
-            <div class="text-center">
-                Broń Palna(Karabin/Strzelba) <asp:TextBox ID="Bron_palna_dluga" runat="server" Height="18px" Width="27px">25</asp:TextBox>
-                Mechanika <asp:TextBox ID="Mechanika" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Prowadzenie Samochodu <asp:TextBox ID="Prowadzenie_Samochodu" runat="server" Height="18px" Width="27px">20</asp:TextBox>
-                Walka Wręcz(Bijatyka) <asp:TextBox ID="Walka_wrecz" runat="server" Height="18px" Width="27px">25</asp:TextBox>
+            <div class="col col-lg-2">
+            Pilotowanie
             </div>
-            <div class="text-center">
-                Medycyna <asp:TextBox ID="Medycyna" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Psychoanaliza <asp:TextBox ID="Psychoanaliza" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Broń Palna(Krótka) <asp:TextBox ID="Bron_palna_krotka" runat="server" Height="18px" Width="27px">20</asp:TextBox>
-                Mity Cthulhu <asp:TextBox ID="Mity_cthulhu" runat="server" Height="18px" Width="27px" ReadOnly="true">0</asp:TextBox>
+            <div class="col col-lg-2">
+            Tropienie
             </div>
-            <div class="text-center">
-                Psychologia <asp:TextBox ID="Psychologia" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Charakteryzacja <asp:TextBox ID="Charakteryzacja" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Nasłuchiwanie <asp:TextBox ID="Nasłuchiwanie" runat="server" Height="18px" Width="27px">20</asp:TextBox>
-                Rzucanie <asp:TextBox ID="Rzucanie" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Antropologia" runat="server" Height="18px" Width="27px"></asp:TextBox>
             </div>
-            <div class="text-center">
-                Wiedza o Naturze <asp:TextBox ID="Wiedza_o_naturze" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Elektryka <asp:TextBox ID="Elektryka" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Nauka <asp:TextBox ID="Nauka" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Skakanie <asp:TextBox ID="Skakanie" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Ksiegowosc" runat="server" Height="18px" Width="27px"></asp:TextBox>
             </div>
-            <div class="text-center">
-                Wspinaczka <asp:TextBox ID="Wspinaczka" runat="server" Height="18px" Width="27px">20</asp:TextBox>
-                Gadanina <asp:TextBox ID="Gadanina" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Spostrzegawczoś<asp:TextBox ID="Spostrzegawczosc" runat="server" Height="18px" Width="27px">25</asp:TextBox>ć 
-                Wycena <asp:TextBox ID="Wycena" runat="server" Height="18px" Width="27px">5</asp:TextBox>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Pilotowanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
             </div>
-            <div class="text-center">
-                Historia <asp:TextBox ID="Historia" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Sztuka/Rzemiosło <asp:TextBox ID="Sztuka_rzemioslo" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Zastraszanie <asp:TextBox ID="Zastraszanie" runat="server" Height="18px" Width="27px">15</asp:TextBox>
-                Jeździectwo <asp:TextBox ID="Jezdziectwo" runat="server" Height="18px" Width="27px">5</asp:TextBox>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Tropienie" runat="server" Height="18px" Width="27px"></asp:TextBox>
             </div>
-            <div class="text-center">
-                Nawigacja <asp:TextBox ID="Nawigacja" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Zręczne Palce <asp:TextBox ID="Zreczne_palce" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Język Obcy <asp:TextBox ID="Jezyk_obcy" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Obsługa Ciężkiego Sprzętu <asp:TextBox ID="Obsluga_ciezkiego_sprzetu" runat="server" Height="18px" Width="27px">1</asp:TextBox>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Archeologia
             </div>
-            <div class="text-center">
-                Okultyzm <asp:TextBox ID="Okultyzm" runat="server" Height="18px" Width="27px">5</asp:TextBox>
-                Sztuka Przetrwania <asp:TextBox ID="Sztuka_przetrwania" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Perswazja <asp:TextBox ID="Perswazja" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Ślusarstwo <asp:TextBox ID="Slusarstwo" runat="server" Height="18px" Width="27px">1</asp:TextBox>
+            <div class="col col-lg-2">
+            Majętność
             </div>
-            <div class="text-center">
-                Język Ojczysty <asp:TextBox ID="Jezyk_ojczysty" runat="server" Height="18px" Width="27px"></asp:TextBox>
-                Pierwsza Pomoc <asp:TextBox ID="Pierwsza_pomoc" runat="server" Height="18px" Width="27px">30</asp:TextBox>
-                Tropienie <asp:TextBox ID="Tropienie" runat="server" Height="18px" Width="27px">10</asp:TextBox>
-                Korzystanie z Bibliotek <asp:TextBox ID="Korzystanie_z_bibliotek" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+            <div class="col col-lg-2">
+            Plywanie
             </div>
-            <div class="text-center">
-                Pilotowanie <asp:TextBox ID="Pilotowanie" runat="server" Height="18px" Width="27px">1</asp:TextBox>
-                Ukrywanie <asp:TextBox ID="Ukrywanie" runat="server" Height="18px" Width="27px">20</asp:TextBox>
+            <div class="col col-lg-2">
+            Ukrywanie
             </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Archeologia" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Majetnosc" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Plywanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Ukrywanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Broń Palna (Karabin/Strzelba)
+            </div>
+            <div class="col col-lg-2">
+            Mechanika
+            </div>
+            <div class="col col-lg-2">
+            Prawo
+            </div>
+            <div class="col col-lg-2">
+            Unik
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Bron_palna_dluga" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Mechanika" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Prawo" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Unik" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Broń Palna (Krótka)
+            </div>
+            <div class="col col-lg-2">
+            Medycyna
+            </div>
+            <div class="col col-lg-2">
+            Prowadzenie Samochodu
+            </div>
+            <div class="col col-lg-2">
+            Urok Osobisty
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Bron_palna_krotka" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Medycyna" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Prowadzenie_Samochodu" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Urok_osobisty" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Charakteryzacja
+            </div>
+            <div class="col col-lg-2">
+            Mity Cthulhu
+            </div>
+            <div class="col col-lg-2">
+            Psychoanaliza
+            </div>
+            <div class="col col-lg-2">
+            Walka Wręcz (Bijatyka)
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Charakteryzacja" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Mity_cthulhu" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Psychoanaliza" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Walka_wrecz" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Elektryka
+            </div>
+            <div class="col col-lg-2">
+            Nasłuchiwanie
+            </div>
+            <div class="col col-lg-2">
+            Psychologia
+            </div>
+            <div class="col col-lg-2">
+            Wiedza o Naturze
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Elektryka" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Nasluchiwanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Psychologia" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Wiedza_o_naturze" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Gadanina
+            </div>
+            <div class="col col-lg-2">
+            Nauka
+            </div>
+            <div class="col col-lg-2">
+            Rzucanie
+            </div>
+            <div class="col col-lg-2">
+            Wspinaczka
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Gadanina" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Nauka" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Rzucanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Wspinaczka" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Historia
+            </div>
+            <div class="col col-lg-2">
+            Nawigacja
+            </div>
+            <div class="col col-lg-2">
+            Skakanie
+            </div>
+            <div class="col col-lg-2">
+            Wycena
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Historia" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Nawigacja" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Skakanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Wycena" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Jeździectwo
+            </div>
+            <div class="col col-lg-2">
+            Obsługa Ciężkiego Sprzętu
+            </div>
+            <div class="col col-lg-2">
+            Spostrzegawczość
+            </div>
+            <div class="col col-lg-2">
+            Zastraszanie
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Jezdziectwo" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Obsluga_ciezkiego_sprzetu" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Spostrzegawczosc" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Zastraszanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Język Obcy
+            </div>
+            <div class="col col-lg-2">
+            Okultyzm
+            </div>
+            <div class="col col-lg-2">
+            Sztuka/Rzemiosło
+            </div>
+            <div class="col col-lg-2">
+            Zręczne Palce
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Jezyk_obcy" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Okultyzm" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Sztuka_rzemioslo" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Zreczne_palce" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Język Ojczysty
+            </div>
+            <div class="col col-lg-2">
+            Perswazja
+            </div>
+            <div class="col col-lg-2">
+            Sztuka Przetrwania
+            </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Jezyk_ojczysty" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Perswazja" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Sztuka_przetrwania" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+            Korzystanie z Bibliotek
+            </div>
+            <div class="col col-lg-2">
+            Pierwsza Pomoc
+            </div>
+            <div class="col col-lg-2">
+            Ślusarstwo
+            </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+        
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Korzystanie_z_bibliotek" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Pierwsza_pomoc" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+                <asp:TextBox ID="Slusarstwo" runat="server" Height="18px" Width="27px"></asp:TextBox>
+            </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>
             <h2 class="text-center">UZBROJENIE</h2>
 
             <div class="text-center">
