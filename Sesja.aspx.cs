@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -12,7 +14,9 @@ namespace Cthulhu_Inz
     public partial class Sesja : System.Web.UI.Page
     {
         SqlConnection myConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["CthulhuDBConnectionString"].ConnectionString);
+        string kampaniaid;
         string postacid;
+        string discord;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -22,6 +26,8 @@ namespace Cthulhu_Inz
                      
                 PrzypiszWartosci();
             }
+            PrzypiszWartosci();
+            WczytanieKampanii();
         }
         //przypisanie wszystkich wartości postaci
         private void PrzypiszWartosci()
@@ -107,6 +113,7 @@ namespace Cthulhu_Inz
             Uzbrojenie3.Text = uzbrojenie3;
             string uzbrojenie4 = (string)dataReader["Uzbrojenie4"];
             Uzbrojenie4.Text = uzbrojenie4;
+            kampaniaid = Convert.ToString((int)dataReader["IDKampanii"]);
             myConnection.Close();
 
             myConnection.Open();
@@ -180,7 +187,6 @@ namespace Cthulhu_Inz
         //edytowanie wartości postaci w bazie
         private void EdytujWartosci()
         {
-            //DOKOŃCZYĆ
             myConnection.Open();
             string query = "UPDATE Postac " +
                 "SET Poczytalność ='" + PktPoczytalnosci.Text + "' , [Punkty Magii] ='" + PktMagii.Text + "', Szczęście ='" + Szczescie.Text + "',[Punkty Wytrzymałości] ='" + PktWytrzymalosci.Text + "', Antropologia ='" + Antropologia.Text + "'," +
@@ -197,6 +203,71 @@ namespace Cthulhu_Inz
             SqlCommand update = new SqlCommand(query, myConnection);
             update.ExecuteNonQuery();
             myConnection.Close();
+        }
+        //metoda wysyłania wiadomości na Discord
+        public static void DiscordSendMessage(string url, string username, string content)
+        {
+            WebClient wc = new WebClient();
+            try
+            {
+                wc.UploadValues(url, new NameValueCollection
+            {
+                {
+                    "content",content
+                },
+                {
+                    "username", username
+                }
+            });
+            }
+            catch (WebException ex)
+            {
+                //Label1.Text = ex.ToString();
+            }
+
+        }
+        //wczytanie DiscordWebHook
+        private void WczytanieKampanii()
+        {
+            myConnection.Open();
+            string query1 = "Select DiscordWebHook from [dbo].Kampania where IDKampanii='" + kampaniaid + "'";
+            SqlCommand command = new SqlCommand(query1, myConnection);
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+            discord = (string)dataReader["DiscordWebHook"];
+            myConnection.Close();
+        }
+        //rzut kością k100
+        protected void Rzut_k100_Click(object sender, EventArgs e)
+        {
+            Random kostkak100 = new Random();
+            string message = "Wynik rzutu kością k100: "+ kostkak100.Next(1, 100 + 1).ToString();
+            DiscordSendMessage(discord, Nazwa_postaci.Text, message);
+            Wynik_rzutu.Text = message;
+        }
+        //rzut kością k4
+        protected void Rzut_k4_Click(object sender, EventArgs e)
+        {
+            Random kostkak4 = new Random();
+            string message = "Wynik rzutu kością k4: " + kostkak4.Next(1, 4 + 1).ToString();
+            DiscordSendMessage(discord, Nazwa_postaci.Text, message);
+            Wynik_rzutu.Text = message;
+        }
+        //rzut kością k6
+        protected void Rzut_k6_Click(object sender, EventArgs e)
+        {
+            Random kostkak6 = new Random();
+            string message = "Wynik rzutu kością k6: " + kostkak6.Next(1, 6 + 1).ToString();
+            DiscordSendMessage(discord, Nazwa_postaci.Text, message);
+            Wynik_rzutu.Text = message;
+        }
+        //rzut kością k8
+        protected void Rzut_k8_Click(object sender, EventArgs e)
+        {
+            Random kostkak8 = new Random();
+            string message = "Wynik rzutu kością k8: " + kostkak8.Next(1, 8 + 1).ToString();
+            DiscordSendMessage(discord, Nazwa_postaci.Text, message);
+            Wynik_rzutu.Text = message;
         }
     }
 }

@@ -175,16 +175,16 @@
         <div class="row justify-content-md-center">
         
             <div class="col col-lg-2">
-                <asp:TextBox ID="Antropologia" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Antropologia" runat="server" Height="24px" Width="34px" CssClass="text-center">1</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Ksiegowosc" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Ksiegowosc" runat="server" Height="24px" Width="34px" CssClass="text-center">5</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Pilotowanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Pilotowanie" runat="server" Height="24px" Width="34px" CssClass="text-center">1</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Tropienie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Tropienie" runat="server" Height="24px" Width="34px" CssClass="text-center">10</asp:TextBox>
             </div>
         </div>
     </div>
@@ -208,16 +208,16 @@
         <div class="row justify-content-md-center">
         
             <div class="col col-lg-2">
-                <asp:TextBox ID="Archeologia" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Archeologia" runat="server" Height="24px" Width="34px" CssClass="text-center">1</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Majetnosc" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Majetnosc" runat="server" Height="24px" Width="34px" CssClass="text-center"></asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Plywanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Plywanie" runat="server" Height="24px" Width="34px" CssClass="text-center">20</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Ukrywanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Ukrywanie" runat="server" Height="24px" Width="34px" CssClass="text-center">20</asp:TextBox>
             </div>
         </div>
     </div>
@@ -241,16 +241,16 @@
         <div class="row justify-content-md-center">
         
             <div class="col col-lg-2">
-                <asp:TextBox ID="Bron_palna_dluga" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Bron_palna_dluga" runat="server" Height="24px" Width="34px" CssClass="text-center">25</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Mechanika" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Mechanika" runat="server" Height="24px" Width="34px" CssClass="text-center">10</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Prawo" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Prawo" runat="server" Height="24px" Width="34px" CssClass="text-center">5</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Unik" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Unik" runat="server" Height="24px" Width="34px" CssClass="text-center"></asp:TextBox>
             </div>
         </div>
     </div>
@@ -274,16 +274,16 @@
         <div class="row justify-content-md-center">
         
             <div class="col col-lg-2">
-                <asp:TextBox ID="Bron_palna_krotka" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Bron_palna_krotka" runat="server" Height="24px" Width="34px" CssClass="text-center">20</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Medycyna" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Medycyna" runat="server" Height="24px" Width="34px" CssClass="text-center">1</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Prowadzenie_Samochodu" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Prowadzenie_Samochodu" runat="server" Height="24px" Width="34px" CssClass="text-center">20</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Urok_osobisty" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Urok_osobisty" runat="server" Height="24px" Width="34px" CssClass="text-center">15</asp:TextBox>
             </div>
         </div>
     </div>
@@ -307,16 +307,16 @@
         <div class="row justify-content-md-center">
         
             <div class="col col-lg-2">
-                <asp:TextBox ID="Charakteryzacja" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Charakteryzacja" runat="server" Height="24px" Width="34px" CssClass="text-center">5</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Mity_cthulhu" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Mity_cthulhu" runat="server" Height="24px" Width="34px" CssClass="text-center" ReadOnly="True">0</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Psychoanaliza" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Psychoanaliza" runat="server" Height="24px" Width="34px" CssClass="text-center">1</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Walka_wrecz" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Walka_wrecz" runat="server" Height="24px" Width="34px" CssClass="text-center">25</asp:TextBox>
             </div>
         </div>
     </div>
@@ -340,16 +340,16 @@
         <div class="row justify-content-md-center">
         
             <div class="col col-lg-2">
-                <asp:TextBox ID="Elektryka" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Elektryka" runat="server" Height="24px" Width="34px" CssClass="text-center">10</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Nasluchiwanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Nasluchiwanie" runat="server" Height="24px" Width="34px" CssClass="text-center">20</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Psychologia" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Psychologia" runat="server" Height="24px" Width="34px" CssClass="text-center">10</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Wiedza_o_naturze" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Wiedza_o_naturze" runat="server" Height="24px" Width="34px" CssClass="text-center">10</asp:TextBox>
             </div>
         </div>
     </div>
@@ -373,20 +373,23 @@
         <div class="row justify-content-md-center">
         
             <div class="col col-lg-2">
-                <asp:TextBox ID="Gadanina" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Gadanina" runat="server" Height="24px" Width="34px" CssClass="text-center">5</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Nauka" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Nauka" runat="server" Height="24px" Width="34px" CssClass="text-center">1</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Rzucanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Rzucanie" runat="server" Height="24px" Width="34px" CssClass="text-center">20</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Wspinaczka" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Wspinaczka" runat="server" Height="24px" Width="34px" CssClass="text-center">20</asp:TextBox>
             </div>
         </div>
     </div>
-    <br />
+            <div class="text-right">
+                Wydane punkty: 
+            <asp:TextBox ID="TextBox1" runat="server" Width="83px" Height="29px"></asp:TextBox>
+                </div>
     <div class="container">
         <div class="row justify-content-md-center">
         
@@ -406,16 +409,16 @@
         <div class="row justify-content-md-center">
         
             <div class="col col-lg-2">
-                <asp:TextBox ID="Historia" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Historia" runat="server" Height="24px" Width="34px" CssClass="text-center">5</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Nawigacja" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Nawigacja" runat="server" Height="24px" Width="34px" CssClass="text-center">10</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Skakanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Skakanie" runat="server" Height="24px" Width="34px" CssClass="text-center">20</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Wycena" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Wycena" runat="server" Height="24px" Width="34px" CssClass="text-center">5</asp:TextBox>
             </div>
         </div>
     </div>
@@ -439,16 +442,16 @@
         <div class="row justify-content-md-center">
         
             <div class="col col-lg-2">
-                <asp:TextBox ID="Jezdziectwo" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Jezdziectwo" runat="server" Height="24px" Width="34px" CssClass="text-center">5</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Obsluga_ciezkiego_sprzetu" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Obsluga_ciezkiego_sprzetu" runat="server" Height="24px" Width="34px" CssClass="text-center">1</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Spostrzegawczosc" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Spostrzegawczosc" runat="server" Height="24px" Width="34px" CssClass="text-center">25</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Zastraszanie" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Zastraszanie" runat="server" Height="24px" Width="34px" CssClass="text-center">15</asp:TextBox>
             </div>
         </div>
     </div>
@@ -472,16 +475,16 @@
         <div class="row justify-content-md-center">
         
             <div class="col col-lg-2">
-                <asp:TextBox ID="Jezyk_obcy" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Jezyk_obcy" runat="server" Height="24px" Width="34px" CssClass="text-center">1</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Okultyzm" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Okultyzm" runat="server" Height="24px" Width="34px" CssClass="text-center">5</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Sztuka_rzemioslo" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Sztuka_rzemioslo" runat="server" Height="24px" Width="34px" CssClass="text-center">10</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Zreczne_palce" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Zreczne_palce" runat="server" Height="24px" Width="34px" CssClass="text-center">10</asp:TextBox>
             </div>
         </div>
     </div>
@@ -504,13 +507,13 @@
         <div class="row justify-content-md-center">
         
             <div class="col col-lg-2">
-                <asp:TextBox ID="Jezyk_ojczysty" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Jezyk_ojczysty" runat="server" Height="24px" Width="34px" CssClass="text-center"></asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Perswazja" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Perswazja" runat="server" Height="24px" Width="34px" CssClass="text-center">10</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Sztuka_przetrwania" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Sztuka_przetrwania" runat="server" Height="24px" Width="34px" CssClass="text-center">10</asp:TextBox>
             </div>
             <div class="col col-lg-2">
             </div>
@@ -535,13 +538,13 @@
         <div class="row justify-content-md-center">
         
             <div class="col col-lg-2">
-                <asp:TextBox ID="Korzystanie_z_bibliotek" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Korzystanie_z_bibliotek" runat="server" Height="24px" Width="34px" CssClass="text-center">20</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Pierwsza_pomoc" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Pierwsza_pomoc" runat="server" Height="24px" Width="34px" CssClass="text-center">30</asp:TextBox>
             </div>
             <div class="col col-lg-2">
-                <asp:TextBox ID="Slusarstwo" runat="server" Height="18px" Width="27px"></asp:TextBox>
+                <asp:TextBox ID="Slusarstwo" runat="server" Height="24px" Width="34px" CssClass="text-center">1</asp:TextBox>
             </div>
             <div class="col col-lg-2">
             </div>

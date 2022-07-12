@@ -22,7 +22,7 @@
                 Twoje aktualne postacie
             </h3>
             <div class="text-center">
-            <asp:GridView ID="GridView1" runat="server" Width="466px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" >
+            <asp:GridView ID="GridView1" runat="server" Width="466px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
                 <Columns>  
                     <asp:TemplateField><ItemTemplate>  
                         <asp:LinkButton ID = "LinkButton" runat="server"  

@@ -168,6 +168,51 @@ namespace Cthulhu_Inz
         protected global::System.Web.UI.WebControls.TextBox PktMagii;
 
         /// <summary>
+        /// Kontrolka Wynik_rzutu.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Wynik_rzutu;
+
+        /// <summary>
+        /// Kontrolka Rzut_k100.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Rzut_k100;
+
+        /// <summary>
+        /// Kontrolka Rzut_k4.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Rzut_k4;
+
+        /// <summary>
+        /// Kontrolka Rzut_k6.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Rzut_k6;
+
+        /// <summary>
+        /// Kontrolka Rzut_k8.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Rzut_k8;
+
+        /// <summary>
         /// Kontrolka CheckBox1.
         /// </summary>
         /// <remarks>

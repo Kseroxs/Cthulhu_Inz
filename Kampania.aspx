@@ -8,17 +8,28 @@
         </header>
         <body>
             <div class="text-center">
-            <asp:Button ID="Stworz_kampanie" runat="server" Text="STWÓRZ KAMPANIĘ" OnClick="Stworz_kampanie_Click"  />
+            <asp:Button ID="Stworz_kampanie" runat="server" Text="STWÓRZ KAMPANIĘ" OnClick="Stworz_kampanie_Click" UseSubmitBehavior="False"  />
                 </div>
             <br />
             <br />
             <div class="text-center">
-                <asp:Label ID="Label1" runat="server" Text="Nazwa Kampanii*" Visible="False"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="Nazwa Kampanii" Visible="False"></asp:Label>
                 <br />
             <asp:TextBox ID="Nazwa_kampanii" runat="server" Width="186px" Visible="False" MaxLength="25"></asp:TextBox>
                 <br />
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Nazwa_kampanii" ErrorMessage="Nazwa nie może być pusta" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Nazwa_kampanii" ErrorMessage="Nazwa nie może być pusta" Font-Size="Large" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
+                <asp:Label ID="Label3" runat="server" Text="Link DiscordWebhook" Visible="False"></asp:Label>
+                <br />
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Content/webhook1.png" Visible="False" />
+                <br />
+                <br />
+                <asp:Image ID="Image2" runat="server" ImageUrl="~/Content/webhook2.png" Visible="False" />
+                <br />
+                <br />
+                <asp:TextBox ID="DiscordWebHook" runat="server" Width="648px" Visible="False"></asp:TextBox>
+                <br />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="DiscordWebHook" ErrorMessage="Należy podać link" Font-Size="Large" ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
                 <asp:Label ID="Label2" runat="server" Text="Opis" Visible="False"></asp:Label>
                 <br />

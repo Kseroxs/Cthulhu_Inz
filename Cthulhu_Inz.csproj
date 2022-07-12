@@ -192,6 +192,8 @@
     <Content Include="Content\paper.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\Cthulhu_logo_2017.png" />
+    <Content Include="Content\webhook1.png" />
+    <Content Include="Content\webhook2.png" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />

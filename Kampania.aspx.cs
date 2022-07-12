@@ -27,19 +27,24 @@ namespace Cthulhu_Inz
             Label1.Visible = true;
             Label2.Visible = true;
             Nazwa_kampanii.Visible = true;
+            Label3.Visible = true;
+            DiscordWebHook.Visible = true;
             Opis.Visible = true;
             Dodaj_kampanie.Visible = true;
-            
+            Image1.Visible = true;
+            Image2.Visible = true;
+
         }
         //dodawanie kampanii do bazy
         protected void Dodaj_kampanie_Click(object sender, EventArgs e)
         {
             myConnection.Open();
-            string query = "Insert into [dbo].[Kampania] (Nazwa,Opis,Straznik) Values (@Nazwa,@Opis,@Straznik)";
+            string query = "Insert into [dbo].[Kampania] (Nazwa,Opis,Straznik,DiscordWebHook) Values (@Nazwa,@Opis,@Straznik,@Discord)";
             SqlCommand insertCommand = new SqlCommand(query, myConnection);
             insertCommand.Parameters.AddWithValue("@Nazwa", Nazwa_kampanii.Text);
             insertCommand.Parameters.AddWithValue("@Opis", Opis.Text);
             insertCommand.Parameters.AddWithValue("@Straznik", User.Identity.Name);
+            insertCommand.Parameters.AddWithValue("@Discord", DiscordWebHook.Text);
             insertCommand.ExecuteNonQuery();
             myConnection.Close();
             ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Udało się stworzyć kampanię "+ Nazwa_kampanii +"');window.location ='Kampania.aspx';", true);

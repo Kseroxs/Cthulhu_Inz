@@ -126,6 +126,28 @@
             </div>
         </div>
     </div>
+    <div class="text-center">Rzuty kością
+    </div>
+    <div class="text-center">
+        <asp:TextBox ID="Wynik_rzutu" runat="server" Width="267px"></asp:TextBox>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+                <asp:Button ID="Rzut_k100" runat="server" Text="Kość k100" OnClick="Rzut_k100_Click" />
+            </div>
+            <div class="col col-lg-2">
+            <asp:Button ID="Rzut_k4" runat="server" Text="Kość k4" OnClick="Rzut_k4_Click" Width="108px" />
+            </div>
+            <div class="col col-lg-2">
+                <asp:Button ID="Rzut_k6" runat="server" Text="Kość k6" OnClick="Rzut_k6_Click" Width="108px" />
+            </div>
+            <div class="col col-lg-2">
+                <asp:Button ID="Rzut_k8" runat="server" Text="Kość k8" OnClick="Rzut_k8_Click" Width="108px" />
+            </div>
+        </div>
+        </div>
     <hr />
     <div class="container">
         <div class="row justify-content-md-center">
